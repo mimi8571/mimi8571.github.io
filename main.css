@@ -10,10 +10,9 @@
 	/* class */
 
 .title {
-	height: 100%;
 	margin: 0px 0px 10px 0px;
-
-
+	background-size: cover;
+	background-color: #DAFAF8;
 }
 
 
