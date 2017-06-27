@@ -10,9 +10,9 @@
 	/* class */
 
 .title {
-	margin: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
 	min-height: 90%;
-	background-image: url();
+	background-image: url(moylau27.github.io/images/stairs16ave.jpg);
 }
 
 
@@ -20,7 +20,7 @@
 	/* standard items */
 
 * {
-	border: hidden;
+	border: 2px black;
 }
 
 a {
@@ -30,13 +30,13 @@ a {
 p {
 	color: black;
 	font-size: 16;
-	font-family: 'Lateef', 'Times', serif;
+	font-family: 'Times', serif;
 
 }
 
 h1 {
 	font-size: 36;
-	font-family: 'PT Serif', serif;
+	font-family: 'Average', sans-serif;
 
 }
 
