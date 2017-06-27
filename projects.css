@@ -1,0 +1,21 @@
+/* individual pages */
+
+p {
+    font-family: 'Times', serif;
+    font-size: 16;
+    line-height: 1em;
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 24;
+    font-style: bold;
+
+}
+
+.title {
+    font-size: 36;
+
+}
+
