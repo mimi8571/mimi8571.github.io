@@ -1,0 +1,62 @@
+/* portfolio - megan lau */
+
+	/* special ID's */
+
+#about {
+	
+}
+
+
+	/* class */
+
+.main-page {
+	margin: 0px 0px 0px 0px;
+	min-height: 90%;
+	background-image: url(https://github.com/moylau27/moylau27.github.io/blob/master/images/stairs16ave.jpg?raw=true);
+	background-size: 90%;
+	background-position: center;
+}
+
+.title {
+	font: 80px "Lato", sans-serif;
+	font-variant-position: center;
+}
+
+
+
+	/* standard items */
+
+* {
+	border: 2px black;
+}
+
+a {
+
+}
+
+p {
+	color: black;
+	font: 16 'Times', serif;
+
+}
+
+h1 {
+	font-size: 36;
+	font-family: 'Average', sans-serif;
+
+}
+
+h2 {
+
+}
+
+h3 {
+	font-family: 'PT Serif', serif;
+	font-style: bold;
+	font-size: 24;
+}
+
+h4 {
+
+}
+
