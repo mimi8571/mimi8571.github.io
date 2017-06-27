@@ -11,8 +11,8 @@
 
 .title {
 	margin: 0px 0px 10px 0px;
-	background-size: cover;
-	background-color: #DAFAF8;
+	min-height: 90%;
+	background-image: url();
 }
 
 
