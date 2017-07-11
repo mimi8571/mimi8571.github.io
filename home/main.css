@@ -29,62 +29,64 @@
 }
 
 .welcome {
-	margin: 0px 0px 0px 0px;
+	border: 0px 0px 0px 0px;
 	min-height: 90%;
 	width: 100%;
-  	vertical-align: center;
 	background-image: url(https://www.picmonkey.com/blog/wp-content/uploads/2016/12/Tasteful-Bokeh-Emphasize-lights.jpg);
-	background-size: cover;
+	background-size: auto;
 	overflow: hidden;
 	background-position: top center;
-  	position: absolute;
+  	position: relative;
+}
+
+.text_center {
+	position: center;
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .title {
-	font: 40px 'Futura', sans-serif;
+	font: 40px 'Nunito', sans-serif;
 	font-style: center;
+	color: white;
 
 }
 
 .subtitle {
-	font: 24px 'Lato', sans-serif;
+	font: 24px 'Futura', sans-serif;
+	color: white;
 }
 
 
 	/* standard items */
 
-* {
-	border: 2px black;
-}
-
-a {
-
-}
-
 p {
 	color: black;
-	font: 16 'Lato', sans-serif;
+	font: 16px 'EB Garamond', serif;
+	margin-left: 7%;
   	line-height: 1.63;
   	font-weight: 400;
   	padding: 0em 1.5em 1.5em 1.5em
 }
 
 h1 {
-	font-size: 36;
-	font-family: 'Average', sans-serif;
+	font-size: 36px 'Nunito', sans-serif;
+
 
 }
 
 h2 {
 	font-style: italic;
+	font: 20px 'Nunito', sans-serif;
+	color: #2E3B3E;
 
 }
 
 h3 {
-	font-family: 'Futura', sans-serif;
+	font: 20px 'Futura', sans-serif;
 	font-style: bold;
-	font-size: 24;
-  	color: #2E3B3E
+  	color: black
 }
 
 h4 {
