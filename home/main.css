@@ -31,12 +31,13 @@
 .welcome {
 	margin: 0px 0px 0px 0px;
 	min-height: 90%;
+	width: 100%;
   	vertical-align: center;
-	background-image: url(https://github.com/moylau27/moylau27.github.io/blob/master/images/stairs16ave.jpg?raw=true);
-	background-size: 90%;
+	background-image: url(https://www.picmonkey.com/blog/wp-content/uploads/2016/12/Tasteful-Bokeh-Emphasize-lights.jpg);
+	background-size: cover;
+	overflow: hidden;
 	background-position: top center;
-  	box-sizing: border-box;
-  	position: relative;
+  	position: absolute;
 }
 
 .title {
