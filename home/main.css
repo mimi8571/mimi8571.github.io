@@ -1,27 +1,53 @@
 /* portfolio - megan lau */
 
+
+* {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 	/* special ID's */
 
 #about {
-	
+	background-color: white;
+		
 }
 
 
 	/* class */
+.bio {
+  float: left;
+  margin-left: 5%;
+  width: 55%;
+}
 
-.main-page {
+.bio-img {
+  float: right;
+  width: 45%;
+  padding: 1%;
+  margin-right: 5%
+  
+}
+
+.welcome {
 	margin: 0px 0px 0px 0px;
 	min-height: 90%;
+  	vertical-align: center;
 	background-image: url(https://github.com/moylau27/moylau27.github.io/blob/master/images/stairs16ave.jpg?raw=true);
 	background-size: 90%;
-	background-position: center;
+	background-position: top center;
+  	box-sizing: border-box;
+  	position: relative;
 }
 
 .title {
-	font: 80px "Lato", sans-serif;
-	font-variant-position: center;
+	font: 40px 'Futura', sans-serif;
+	font-style: center;
+
 }
 
+.subtitle {
+	font: 24px 'Lato', sans-serif;
+}
 
 
 	/* standard items */
@@ -36,8 +62,10 @@ a {
 
 p {
 	color: black;
-	font: 16 'Times', serif;
-
+	font: 16 'Lato', sans-serif;
+  	line-height: 1.63;
+  	font-weight: 400;
+  	padding: 0em 1.5em 1.5em 1.5em
 }
 
 h1 {
@@ -47,13 +75,15 @@ h1 {
 }
 
 h2 {
+	font-style: italic;
 
 }
 
 h3 {
-	font-family: 'PT Serif', serif;
+	font-family: 'Futura', sans-serif;
 	font-style: bold;
 	font-size: 24;
+  	color: #2E3B3E
 }
 
 h4 {
