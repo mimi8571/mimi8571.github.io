@@ -8,13 +8,19 @@
 	/* ID */
 
 #subtitle {
-	font: 24px 'Lato', sans-serif;
+	font: 20px 'Lato', sans-serif;
+	font-style: italic;
 	text-align: center;
 	color: white;
 }
 
+#content {
+	justify-content: center;
+
+}
 
 	/* class */
+
 
 .welcome_box {
 	background-image: url(https://www.picmonkey.com/blog/wp-content/uploads/2016/12/Tasteful-Bokeh-Emphasize-lights.jpg);
@@ -47,8 +53,8 @@
 .about_box {
 	height: 45%;
 
-
 }
+
 
 .bio {
   float: left;
@@ -77,7 +83,7 @@ p {
 }
 
 h1 {
-	font: 44px 'Lato', sans-serif;
+	font: 62px 'Lato', sans-serif;
 	font-weight: 300;
 	text-align: center;
 	color: white;
