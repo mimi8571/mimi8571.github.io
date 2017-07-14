@@ -3,6 +3,7 @@
 
 * {
 	border: 1px solid rgba(0, 0, 0, 0.3);
+	margin: 0px 0px 0px 0px;
 }
 
 	/* ID */
@@ -19,16 +20,26 @@
 
 }
 
+#course_info {
+	color: black;
+	font: 16px 'Lato', sans-serif;
+}
+
+#keywords {
+	font-style: italic;
+	color: #454553;
+}
+
 	/* class */
 
 
 .welcome_box {
-	background-image: url(https://www.picmonkey.com/blog/wp-content/uploads/2016/12/Tasteful-Bokeh-Emphasize-lights.jpg);
+	background-image: url(/images/valenciabeach.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: center;
 	width: 100%;
-	height: 100%;
+	height: 100%
 	top: 0;
 	left: 0;
 	right: 0;
@@ -76,14 +87,13 @@
 p {
 	color: black;
 	font: 16px 'Lato', sans-serif;
-	margin-left: 7%;
   	line-height: 1.63;
   	font-weight: 400;
   	padding: 0em 1.5em 1.5em 1.5em
 }
 
 h1 {
-	font: 62px 'Lato', sans-serif;
+	font: 63px 'Lato', sans-serif;
 	font-weight: 300;
 	text-align: center;
 	color: white;
@@ -92,7 +102,7 @@ h1 {
 
 h2 {
 	font-style: italic;
-	font: 20px 'Futura', sans-serif;
+	font: 24px 'Futura', sans-serif;
 	color: #2E3B3E;
 
 }
@@ -104,6 +114,7 @@ h3 {
 }
 
 h4 {
-
+	font: 18px 'Lato', sans-serif;
+	font-style: italic;
 }
 
