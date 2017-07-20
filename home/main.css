@@ -16,20 +16,6 @@
 	color: white;
 }
 
-#content {
-	justify-content: center;
-
-}
-
-#courses {
-	margin: 3% 6% 3% 6%;
-}
-
-#course_info {
-	color: black;
-	font: 16px 'Lato', sans-serif;
-}
-
 #keywords {
 	font-style: italic;
 	color: #454553;
@@ -48,7 +34,7 @@
 	height: 100vh;
 	min-width: 100%;
 	min-height: 600px;
-  	overflow-y: hidden;
+  	overflow: hidden;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -61,21 +47,48 @@
 	width: 100%;
 }
 
+.navbar {
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	overflow: hidden;
+	opacity: 0.75;
+}
 
-.social {
-	justify-content: center;
+.navbar p {
+	font: 20px 'Futura', sans-serif;
+	float: left;
+	display: block;
+	padding: .25em;
+  	color: #303A52;
+
+}
+
+.navbar a {
+	padding: 0.5em;
+	font: 18px 'Lato', sans-serif;
+	color: #393E46;
+}
+
+.navbar a:hover {
+	color: #222831;
 
 }
 
 .social_icon {
-	width: 0.5em;
-	height: 0.5em;
+	width: 2em;
+	height: 2em;
+	display: block;
 }
 
 .about_box {
-	background-color: white;
-	margin: 3% 6% 3% 6%;
-	height: 45%
+	margin: 0;
+	padding: 3% 6% 3% 6%;
+    background-color: #DEFCF9;
+	height: 100%;
+	justify-content: center;
 }
 
 
@@ -86,17 +99,31 @@
 
 .bio_img {
 	width: 45%;
-	padding: 2.5%;
+	padding: 1.5%;
 	margin-left: 55%;  
 }
 
 .project_box {
-	margin: 3% 6% 3% 6%;
-	background-color: #e6e6fa;
+	margin: 0;
+	padding: 3% 6% 3% 6%;
+	background-color: #E8F1F5;
+	justify-content: center;
 }
 
+.course_box {
+	margin: 0;
+	padding: 3% 6% 3% 6%;
+	justify-content: center;
+}
 
 	/* standard items */
+
+ul {
+	color: black;
+	font: 16px 'Lato', sans-serif;
+	list-style: disc inside;
+
+}
 
 p {
 	color: black;
@@ -121,7 +148,7 @@ h2 {
 	font: 24px 'Futura', sans-serif;
 	color: #2E3B3E;
 	margin-bottom: 0.75em;
-	margin-top: 1.5em;
+	margin-top: 0.75em;
 }
 
 h3 {
