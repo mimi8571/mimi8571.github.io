@@ -63,11 +63,13 @@
 
 
 .social {
+	justify-content: center;
 
 }
 
 .social_icon {
-
+	width: 0.5em;
+	height: 0.5em;
 }
 
 .about_box {
