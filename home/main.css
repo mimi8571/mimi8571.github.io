@@ -91,6 +91,7 @@
 
 .project_box {
 	margin: 3% 6% 3% 6%;
+	background-color: #C9FDD7
 }
 
 
@@ -117,8 +118,8 @@ h1 {
 h2 {
 	font: 24px 'Futura', sans-serif;
 	color: #2E3B3E;
-	margin-bottom: 3em;
-	margin-top: 3em;
+	margin-bottom: 1.35em;
+	margin-top: 2em;
 }
 
 h3 {
