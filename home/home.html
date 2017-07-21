@@ -6,6 +6,7 @@
 		<title>Megan Lau</title>
 		<link rel="stylesheet" type="text/css" href="./main.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i" />
+		<script src="./main.js"></script>
 
 	</head>
 
@@ -70,14 +71,11 @@
 		<div class="project_box" id="projects">
 			<h2>Projects</h2>
 			<div>
-				<div>
-					<h3>Mini Ferris Wheel</h3>
-					<p>Coming soon...!</p>
-				</div>	
-
-				<div>
+				<div class="project_popup" onclick="popup_box()"">
+					<span class="project_info" id="popup">
 					<h3>Paraplegic Drive Assist</h3>
 					<p>In a sophomore mechanical engineering design course (<a href="#courses">ME 263</a>), the class was tasked to design any assistive device. My team decided to create a device so that paraplegic people and anyone who experiences difficulties with leg movements could drive a car with their hands. <br/> </p>
+					</span>
 				</div>
 
 				<div>
@@ -138,10 +136,10 @@
 					app and features a camera mounted on a gimbal. When looking through a Google Cardboard, 
 					the user can view a live-stream video from the robot's perspective. <br/> Personally, 
 					this was a first and favorite hackathon experience not only because I helped build a robot 
-					with pieces of cardboard we found, but my friends introduced me to the world of programming. 
+					with pieces of cardboard, but my friends introduced me to the world of programming. 
 					As a complete novice in coding, learning to use <a href="http://wiki.ros.org/">ROS</a> 
-					python packages proved to be the more difficult challenge. Eventually, I learned to use 
-					it for passing the smartphone's gyroscope data to the controller for the gimbal, which 
+					python packages proved to be the more difficult challenge. But eventually, I learned to use 
+					it to pass the smartphone's gyroscope data to the controller for the gimbal, which 
 					allowed the robot's camera to turn the same way as the user's head. Our greatest 
 					challenge was avoiding gimbal lock and we had overcome this by converting the phone's Euler 
 					angles to quaternions.<br/></p> 
@@ -171,8 +169,8 @@
 				<ul>
 					<li>ME 274 Dynamics »  conservation principles; Newton's laws of motion; vibrations; 
 					systematic problem-solving</li>
-					<li>ME 263 Intro to Mechanical Engineering Design »  team-based design project; market 
-					research, CAD, and fabrication; assess product performance in the U.S. market </li>
+					<li>ME 263 Intro to Mechanical Engineering Design »  team design project w/ market 
+					research, CAD, fabrication; assess product performance in the U.S. market </li>
 					<li>ECE 201 Linear Circuit Analysis »  fundamentals of electronics; build simple circuits</li>
 				</ul>
 			</div>
