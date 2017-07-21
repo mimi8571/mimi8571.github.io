@@ -71,14 +71,15 @@
 		<div class="project_box" id="projects">
 			<h2>Projects</h2>
 			<div>
-				<div class="project_popup" onclick="popup_box()"">
+				<div class="project_popup" onclick="popup_box()">
 					<span class="project_info" id="popup">
 					<h3>Paraplegic Drive Assist</h3>
 					<p>In a sophomore mechanical engineering design course (<a href="#courses">ME 263</a>), the class was tasked to design any assistive device. My team decided to create a device so that paraplegic people and anyone who experiences difficulties with leg movements could drive a car with their hands. <br/> </p>
 					</span>
 				</div>
 
-				<div>
+				<div class="project_popup" onclick="popup_box()">
+					<span class="project_info" id="popup">
 					<h3>CATIA V5 Surface Modeling</h3>
 					<div>
 						<h4>Audi R8</h4>
@@ -92,7 +93,7 @@
 						filling the paths in Generative Shape Design, and finally mirroring the surfaces 
 						to create the entire vehicle.</p>
 					</div>
-					<div class="">
+					<div>
 						<h4>Canon T2i Digital Camera</h4>
 						<p>Unlike the Audi R8, I used this exercise to further develop surface modeling 
 						skills while practicing 3D modeling real-life objects without blueprints or drawings.
@@ -107,12 +108,14 @@
 						portait, automatic). Similar to the grip on the lens, I rotated small ridges on a conical 
 						frustrum to complete the CAD exercise.</p>
 					</div>
+					</span>
 
 					<p id="keywords">CAD, CATIA V5, surface modeling</p>
 
 				</div>
 
-				<div>
+				<div class="project_popup" onclick="popup_box()">
+					<span class="project_info" id="popup">
 					<h3>Autonomous Suitcase</h3>
 					<p>My friends and I decided we wanted our carry-on luggages to follow us around the 
 					airport so we could have a hands-free journey sometime in the near future. We thought 
@@ -125,10 +128,11 @@
 					speed controllers. Then, we integrated Kinect's existing motion tracking code such 
 					that the wheels would move forward and turn in the same direction as the person being 
 					tracked by the Kinect. Thus, code + MDF luggage frame = Autonomous Suitcase! </p>
-					
+					</span>
 				</div>
 
 				<div>
+					<span class="project_info" id="popup">
 					<h3>Natural Telepresence</h3>
 					<p>Inspired by our passion for robots, interests in virtual reality, and motivation 
 					to do well at our first hackathon, together my friends and I created... Natural 
@@ -144,6 +148,7 @@
 					challenge was avoiding gimbal lock and we had overcome this by converting the phone's Euler 
 					angles to quaternions.<br/></p> 
 					<p style="font-style: italic">Read more <a href="https://devpost.com/software/natural_telepresence">here</a>.</p>
+					</span>
 				</div>
 			</div>
 
@@ -180,6 +185,11 @@
 				<p>ME 200 Thermodynamics 1; ME 270 Statics; MA 303 Partial Differential Equations</p>
 
 			</div>
+		</div>
+
+		<div id="contact" style="background-color: mintcream">
+			<h1>Contact</h1>
+			<p>via</p>
 		</div>
 
 	</body>
