@@ -13,6 +13,7 @@
 	font-style: italic;
 	text-align: center;
 	color: white;
+	letter-spacing: 0.35px;
 }
 
 #keywords {
@@ -23,7 +24,7 @@
 	/* class */
 
 .image {
-	width: 100%;
+	width: 90%;
 }
 
 .welcome_box {
@@ -55,7 +56,6 @@
 	right: 0;
 	width: 100%;
 	background: white; 
-	background: linear-gradient(to bottom right, white, #DEFCF9);
 	position: fixed;
 	overflow: hidden;
 	opacity: 0.75;
@@ -82,6 +82,7 @@
 .navbar a:hover {
 	/* color: #222831; */
 	color: black;
+	font-weight: bolder;
 
 }
 
@@ -115,9 +116,9 @@
 }
 
 .bio_img {
-	width: 45%;
 	padding: 1.5%;
 	margin-left: 55%;  
+	justify-content: center;
 }
 
 .project_box {
@@ -141,7 +142,7 @@ ul {
 	color: black;
 	font: 16px 'Lato', sans-serif;
 	list-style: disc inside;
-
+	margin-bottom: 1em;
 }
 
 p {
@@ -168,6 +169,7 @@ h2 {
 	color: #2E3B3E;
 	margin-bottom: 0.75em;
 	margin-top: 0.75em;
+	text-decoration: underline;
 }
 
 h3 {
