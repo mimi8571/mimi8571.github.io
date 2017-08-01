@@ -7,8 +7,23 @@
 		<link rel="stylesheet" type="text/css" href="./main.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i" />
 		<script src="./portfolio.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+		<!-- Smooth scrolling -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+		    $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 535, function(){
+		        window.location.hash = hash;
+		      });
+		    }
+		  });
+		});
+		</script>
 
 	</head>
 
@@ -24,7 +39,7 @@
 		<div class="navbar">
 			<p>Megan Lau</p>
 			<div style="margin-right: 4.25%; padding: 0;">
-				<a class="social_button">Contact</a>
+				<a href="#contact" class="social_button">Contact</a>
 				<div style="display: none">
 					<a href="https://www.linkedin.com/in/meganolau/" target="_blank">
 						<img src="./images/logos/linkedin.png" class="social_icon" />
@@ -77,16 +92,16 @@
       				<img src="https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg" />
       			</a>
 
-      			<a href="#2017_CATIAMod">
-        			<img src="https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg" class="project_popup" />
+      			<a href="#2017_CATIAMod" class="project_popup" >
+        			<img src="https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg" />
       			</a>
 
 				<a href="#2016_AutoSuit" class="project_popup" >
       				<img src="./images/autonsuitcase.jpg" />
       			</a>
 
-      			<a href="#2016_NatuTele">
-      				<img src="https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg" class="project_popup" />
+      			<a href="#2016_NatuTele" class="project_popup" >
+      				<img src="https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg" />
       			</a>
 
       
@@ -142,12 +157,12 @@
 						<p>My friends and I decided we wanted our carry-on luggages to follow us around the 
 						airport so we could have a hands-free journey sometime in the near future. We thought 
 						of problems like how to support the luggage, move the entire apparatus, and have the 
-						frame follow its user. Taking observations from people play games with Xbox Kinect 
+						frame follow its user. <br/> With an Xbox Kinect 
 						and prior experience with brushless skateboard motors, we split tasks amongst each 
 						other. As two people CAD-ed and laser cut the luggage frame using MDF boards, I worked 
 						with another friend to write the necessary program in Python which would allow the 
 						system to move. We utilized ROS python packages to control the skateboard wheels and 
-						speed controllers. Then, we integrated Kinect's existing motion tracking code such 
+						speed controllers. Then, integrated Kinect's existing motion tracking code such 
 						that the wheels would move forward and turn in the same direction as the person being 
 						tracked by the Kinect. Thus, code + MDF luggage frame = Autonomous Suitcase! </p>
 					</div>
@@ -211,8 +226,10 @@
 		</div>
 
 		<div class="contact_box" id="contact">
-			<h1 style="color: #1a1c1e">Contact</h1>
-			<p style="text-align: center">via</p>
+			<div>
+				<h1 style="color: #1a1c1e">Contact</h1>
+				<p style="text-align: center">via</p>
+			</div>
 		</div>
 
 	</body>

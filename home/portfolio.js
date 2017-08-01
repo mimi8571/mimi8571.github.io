@@ -1,19 +1,4 @@
-$('.smooth_scroll').on('click', function() {
-    $.smoothScroll({
-        scrollElement: $('body'),
-        scrollTarget: '#' + this.id
-    });
-    
-    return false;
-});
-
-/*
-function popup_box() {
-    var popup = document.getElementById("popup");
-    popup.classList.toggle("visibility");
-}
-*/
-
+//Click X to close modal box
 function modalClose() {
     if (location.hash == '#modalBox') {
         location.hash = '';
