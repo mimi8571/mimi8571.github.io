@@ -21,6 +21,10 @@
 	color: #454553;
 }
 
+#modalBox {
+	overflow: scroll;
+}
+
 	/* class */
 
 .image {
@@ -133,11 +137,12 @@
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
-	width: 100%;
+	width: 50%;
 	height: 25em;
 	background: #1a1c1e;
 	float: left;
 	box-sizing: border-box;
+	padding: 2%
 }
 
 /* Popup box attempt 2 */
