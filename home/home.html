@@ -6,7 +6,9 @@
 		<title>Megan Lau</title>
 		<link rel="stylesheet" type="text/css" href="./main.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i" />
-		<script src="./main.js"></script>
+		<script src="./portfolio.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
 
 	</head>
 
@@ -47,7 +49,7 @@
 
 
 		<!-- About Me -->
-		<div class="about_box" id="about">
+		<div class="about_box smooth_scroll" id="about">
 			<div>
 				<div class="bio">
 					<h2>About Me</h2>
@@ -68,7 +70,7 @@
 		</div>
 
 		<!-- Engineering Projects -->
-		<div class="project_box" id="projects">
+		<div class="project_box smooth_scroll" id="projects">
 			<h2>Projects</h2>
 			<div>
 				<div class="project_popup" onclick="popup_box()">
@@ -157,7 +159,7 @@
 
 		<!-- Courses --> 
 		<!-- Shift+Option+backslash = » -->
-		<div class="course_box" id="courses">
+		<div class="course_box smooth_scroll" id="courses">
 			<h2>Courses</h2>
 			<div>
 				<h3>Fall 2017 (In Progress)</h3>
@@ -188,8 +190,8 @@
 		</div>
 
 		<div class="contact_box" id="contact">
-			<h1>Contact</h1>
-			<p>via</p>
+			<h1 style="color: #1a1c1e">Contact</h1>
+			<p style="text-align: center">via</p>
 		</div>
 
 	</body>
