@@ -73,50 +73,60 @@
 		<div class="project_box smooth_scroll" id="projects">
 			<h2>Projects</h2>
 			<div>
-				<div class="project_popup" onclick="popup_box()">
-					<span class="project_info" id="popup">
-					<h3>Paraplegic Drive Assist</h3>
-					<p>In a sophomore mechanical engineering design course (<a href="#courses">ME 263</a>), the class was tasked to design any assistive device. My team decided to create a device so that paraplegic people and anyone who experiences difficulties with leg movements could drive a car with their hands. <br/> </p>
-					</span>
+     			<a href="#2017_PDAssist">
+      				<img src="https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg" class="project_popup" />
+      			</a>
+      
+      			<div id="2017_PDAssist" class="project_modal">
+        			<div id="modalBox">
+	          			<a href="#close" title="Close" class="close_modal">X</a>
+						<h3>Paraplegic Drive Assist</h3>
+						<p>In a sophomore mechanical engineering design course (<a href="#courses">ME 263</a>), the class was tasked to design any assistive device. My team decided to create a device so that paraplegic people and anyone who experiences difficulties with leg movements could drive a car with their hands. <br/> </p>
+					</div>
 				</div>
 
-				<div class="project_popup" onclick="popup_box()">
-					<span class="project_info" id="popup">
-					<h3>CATIA V5 Surface Modeling</h3>
-					<div>
-						<h4>Audi R8</h4>
-						<p>As a first surface modeling project, I decided to challenge myself with CADing 
-						the body of a car.  I focused on learning to make surfaces with freestyle curves 
-						based on existing drawings.<br/>After finding the blueprints of the Audi R8, I 
-						used the Sketch Tracer workbench to import, position, and scale the four views 
-						(front, back, top, side) to a common axis.  I used the 3D curve tool inside the 
-						Freestyle workbench to draw individual paths for half of the car, then adjusted 
-						the cartesian coordinates and imposed tangency for each point. I moved on to 
-						filling the paths in Generative Shape Design, and finally mirroring the surfaces 
-						to create the entire vehicle.</p>
+        		<a href="#2016_AutoSuit">
+      				<img src="https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg" class="project_popup" />
+      			</a>
+        
+     			<div id="2016_AutoSuit" class="project_modal">
+      				<div id="modalBox">
+	          			<a href="#close" title="Close" class="close_modal">X</a>
+						<h3>CATIA V5 Surface Modeling</h3>
+						<div>
+							<h4>Audi R8</h4>
+							<p>As a first surface modeling project, I decided to challenge myself with CADing 
+							the body of a car.  I focused on learning to make surfaces with freestyle curves 
+							based on existing drawings.<br/>After finding the blueprints of the Audi R8, I 
+							used the Sketch Tracer workbench to import, position, and scale the four views 
+							(front, back, top, side) to a common axis.  I used the 3D curve tool inside the 
+							Freestyle workbench to draw individual paths for half of the car, then adjusted 
+							the cartesian coordinates and imposed tangency for each point. I moved on to 
+							filling the paths in Generative Shape Design, and finally mirroring the surfaces 
+							to create the entire vehicle.</p>
+						</div>
+						<div>
+							<h4>Canon T2i Digital Camera</h4>
+							<p>Unlike the Audi R8, I used this exercise to further develop surface modeling 
+							skills while practicing 3D modeling real-life objects without blueprints or drawings.
+							<br/>Measuring my own camera with calipers, I translated dimensions of five different 
+							parts of the camera into a surface model. Inside generative shape design, I first 
+							modeled the lens by creating cylinders and using the circular pattern to rotate 
+							small square ridges that represent the rubber grip used to adjust focal length of 
+							the lens. Next, I used curves in both the frontal and profile planes to create both 
+							the sun shield and lens cover. With both generative shape design and freestyle workbenches, 
+							I drew paths and moved individual points to create a rough model of the camera body. T
+							he last component is the knob used to switch between different camera modes (e.g. 
+							portait, automatic). Similar to the grip on the lens, I rotated small ridges on a conical 
+							frustrum to complete the CAD exercise.</p>
+						</div>
+						
+						<p id="keywords">CAD, CATIA V5, surface modeling</p>
 					</div>
-					<div>
-						<h4>Canon T2i Digital Camera</h4>
-						<p>Unlike the Audi R8, I used this exercise to further develop surface modeling 
-						skills while practicing 3D modeling real-life objects without blueprints or drawings.
-						<br/>Measuring my own camera with calipers, I translated dimensions of five different 
-						parts of the camera into a surface model. Inside generative shape design, I first 
-						modeled the lens by creating cylinders and using the circular pattern to rotate 
-						small square ridges that represent the rubber grip used to adjust focal length of 
-						the lens. Next, I used curves in both the frontal and profile planes to create both 
-						the sun shield and lens cover. With both generative shape design and freestyle workbenches, 
-						I drew paths and moved individual points to create a rough model of the camera body. T
-						he last component is the knob used to switch between different camera modes (e.g. 
-						portait, automatic). Similar to the grip on the lens, I rotated small ridges on a conical 
-						frustrum to complete the CAD exercise.</p>
-					</div>
-					
-					<p id="keywords">CAD, CATIA V5, surface modeling</p>
-					</span>
 
 				</div>
 
-				<div class="project_popup" onclick="popup_box()">
+				<div style="display: none" class="project_popup" onclick="popup_box()">
 					<span class="project_info" id="popup">
 					<h3>Autonomous Suitcase</h3>
 					<p>My friends and I decided we wanted our carry-on luggages to follow us around the 
@@ -133,7 +143,7 @@
 					</span>
 				</div>
 
-				<div class="project_popup" onclick="popup_box()">
+				<div style="display: none" class="project_popup" onclick="popup_box()">
 					<span class="project_info" id="popup">
 					<h3>Natural Telepresence</h3>
 					<p>Inspired by our passion for robots, interests in virtual reality, and motivation 
