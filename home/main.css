@@ -2,7 +2,7 @@
 
 
 * {
-	border: 1px solid rgba(0, 0, 0, 0.35);
+	/* border: 1px solid rgba(0, 0, 0, 0.35);  */
 	margin: 0;
 }
 
@@ -23,13 +23,14 @@
 
 #modalBox {
 	overflow: scroll;
+	margin: 7%;
 }
 
 	/* class */
 
 
 .welcome_box {
-	background-image: url(./images/valenciabeach.JPG); /* https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg */
+	background-image: url(./images/valenciabeach.JPG);
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -127,7 +128,7 @@
 .project_box {
 	margin: 0;
 	padding: 3% 6% 3% 6%;
-	background-color: #E8F1F5;
+	background-color: snow;
 	justify-content: center;
 	clear: both;
 	box-sizing: border-box;
@@ -143,12 +144,25 @@
 	float: left;
 	box-sizing: border-box;
 	padding: 2%;
+	text-decoration: blink;
 }
 
 .project_popup img {
 	height: 100%;
 	width: auto;
 	box-sizing: border-box;
+}
+
+.project_popup p {
+	font: 40px 'Futura', 'Trebuchet MS', sans-serif;
+	color: #2E3B3E;
+	text-align: left;
+	padding: 8%;
+	bottom: 1em;
+}
+
+.project_popup p:hover, .project_popup p:focus {
+	text-decoration: underline;
 }
 
 /* Popup box attempt 2 */
@@ -177,8 +191,6 @@
 .project_modal > div {
     width: 66%;
     position: fixed;
-    padding: 7%;
-    border-radius: 8px;
     background: (26, 28, 30, 0.75);
     /*
     background: -moz-linear-gradient(#fff, #999);
@@ -187,16 +199,15 @@
     */
 }
 
-.project_modal p, h1, h2, h3, h4 {
+.project_modal p, .project_modal h3, .project_modal h4 {
 	color: mintcream;
 }
 
 .close_modal {
-    background: #606061;
-    color: #FFFFFF;
+    color: white;
     line-height: 25px;
     position: absolute;
-    right: -12px;
+    right: 0.5em;
     text-align: center;
     top: -10px;
     width: 24px;
@@ -210,7 +221,7 @@
     box-shadow: 1px 1px 3px #000;
 }
 
-.close_modal:hover .close_modal:focus {
+.close_modal p:hover .close_modal p:focus {
     color: black;
 }
 
@@ -222,7 +233,8 @@
 }
 
 .contact_box {
-	background: url("./images/snow.jpg");
+	background: url("./images/sunsetbokeh.jpg");
+	background-position: center;
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
 	background-size: cover;
@@ -231,6 +243,11 @@
 }
 
 	/* standard items */
+
+img.center {
+	margin: auto;
+	display: block;
+}
 
 ul {
 	color: black;
@@ -255,9 +272,11 @@ p {
 h1 {
 	font: 63px 'Lato', sans-serif;
 	font-weight: 300;
+	line-height: 1em;
 	text-align: center;
 	color: white;
 	padding-top: 33vh;
+	padding-bottom: 0.2em;
 }
 
 h2 {

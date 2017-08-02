@@ -6,25 +6,6 @@
 		<title>Megan Lau</title>
 		<link rel="stylesheet" type="text/css" href="./main.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i" />
-		<script src="./portfolio.js"></script>
-		<!-- Smooth scrolling -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-		    $("a").on('click', function(event) {
-		    if (this.hash !== "") {
-		      event.preventDefault();
-		      var hash = this.hash;
-		      $('html, body').animate({
-		        scrollTop: $(hash).offset().top
-		      }, 535, function(){
-		        window.location.hash = hash;
-		      });
-		    }
-		  });
-		});
-		</script>
-
 	</head>
 
 	<body>
@@ -88,34 +69,34 @@
 		<div class="project_box smooth_scroll" id="projects">
 			<h2>Projects</h2>
 			<div>
-     			<a href="#2017_PDAssist" class="project_popup">
-      				<img src="https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg" />
+     			<a href="#2017_PDAssist" class="project_popup" style="background-color: cadetblue">
+      				<p>Driver Assistive Device</p>
       			</a>
 
-      			<a href="#2017_CATIAMod" class="project_popup" >
-        			<img src="https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg" />
+      			<a href="#2017_CATIAMod" class="project_popup" style="background-color: cornsilk">
+        			<p>CATIA Surface Modeling</p>
       			</a>
 
-				<a href="#2016_AutoSuit" class="project_popup" >
-      				<img src="./images/autonsuitcase.jpg" />
+				<a href="#2016_AutoSuit" class="project_popup" style="background-color: #E8F1F5">
+      				<p>Autonomous Suitcase</p>
       			</a>
 
-      			<a href="#2016_NatuTele" class="project_popup" >
-      				<img src="https://farm5.staticflickr.com/4204/34857455832_60a723fe9e_k.jpg" />
+      			<a href="#2016_NatuTele" class="project_popup" style="background-color: #A9EEE6">
+      				<p>Natural Telepresence</p>
       			</a>
 
       
       			<div id="2017_PDAssist" class="project_modal">
         			<div id="modalBox">
-	          			<a href="#close" title="Close" class="close_modal">X</a>
+	          			<a href="#close" title="Close" class="close_modal">&times;</a>
 						<h3>Paraplegic Drive Assist</h3>
-						<p>In a sophomore mechanical engineering design course (<a href="#courses">ME 263</a>), the class was tasked to design any assistive device. My team decided to create a device so that paraplegic people and anyone who experiences difficulties with leg movements could drive a car with their hands. <br/> </p>
+						<p>In a sophomore mechanical engineering design course (<a href="#courses" style="color: salmon">ME 263</a>), the class was tasked to design any assistive device. My team decided to create a device so that paraplegic people and anyone who experiences difficulties with leg movements could drive a car with their hands. <br/> </p>
 					</div>
 				</div>
 
      			<div id="2017_CATIAMod" class="project_modal">
       				<div id="modalBox">
-	          			<a href="#close" title="Close" class="close_modal">X</a>
+	          			<a href="#close" title="Close" class="close_modal">&times;</a>
 						<h3>CATIA V5 Surface Modeling</h3>
 						<div>
 							<h4>Audi R8</h4>
@@ -152,8 +133,9 @@
 
      			<div id="2016_AutoSuit" class="project_modal">
       				<div id="modalBox">
-	          			<a href="#close" title="Close" class="close_modal">X</a>
+	          			<a href="#close" title="Close" class="close_modal">&times;</a>
 						<h3>Autonomous Suitcase</h3>
+						<img src="./images/autonsuitcase.jpg" />
 						<p>My friends and I decided we wanted our carry-on luggages to follow us around the 
 						airport so we could have a hands-free journey sometime in the near future. We thought 
 						of problems like how to support the luggage, move the entire apparatus, and have the 
@@ -170,7 +152,7 @@
 
 				<div id="2016_NatuTele" class="project_modal"">
 				    <div id="modalBox">
-	          			<a href="#close" title="Close" class="close_modal">X</a>
+	          			<a href="#close" title="Close" class="close_modal">&times;</a>
 							<h3>Natural Telepresence</h3>
 						<p>Inspired by our passion for robots, interests in virtual reality, and motivation 
 						to do well at our first hackathon, together my friends and I created... Natural 
@@ -227,10 +209,56 @@
 
 		<div class="contact_box" id="contact">
 			<div>
-				<h1 style="color: #1a1c1e">Contact</h1>
+				<h1 style="padding-top: 42vh; color: #1a1c1e">Contact</h1>
 				<p style="text-align: center">via</p>
 			</div>
 		</div>
+
+		<script src="portfolio.js"></script>
+		<!-- Smooth scrolling -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+		    $("a").on('click', function(event) {
+		    if (this.hash !== "") {
+		      event.preventDefault();
+		      var hash = this.hash;
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		  		}, 535, function(){
+		        window.location.hash = hash; });
+		    	}
+		  	});
+			});
+			var modal = document.getElementById('modalBox');    //get modal/popup container
+			var open = document.getElementsByClassName("project_modal")[0];    //get container to open modal
+			var close = document.getElementsByClassName("close_modal")[0];    //get button to close modal
+
+			//open modal
+			open.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			//close modal by X-button
+			close.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			//close modal by clicking outside window
+			window.onclick = function(e) {
+			    if (e.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+
+			//close modal by escape key
+			document.addEventListener('keyup', function(e) {
+			    if (e.keyCode == 27) {
+			        modalClose();
+			    }
+			});
+
+		</script>
 
 	</body>
 
