@@ -2,7 +2,7 @@
 
 
 * {
-	/* border: 1px solid rgba(0, 0, 0, 0.35);  */
+	/* border: 1px solid rgba(0, 0, 0, 0.35); */
 	margin: 0;
 }
 
@@ -21,13 +21,7 @@
 	color: #454553;
 }
 
-#modalBox {
-	overflow: scroll;
-	margin: 7%;
-}
-
 	/* class */
-
 
 .welcome_box {
 	background-image: url(./images/valenciabeach.JPG);
@@ -52,45 +46,33 @@
 	width: 100%;
 }
 
-.navbar {
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
+.nav_custom {
+	text-transform: uppercase;
 	background: white; 
+	opacity: 0.75;
+	height: 3.75em;
 	position: fixed;
 	overflow: hidden;
-	opacity: 0.75;
-	text-transform: uppercase;
-	padding: 0.35em 1.25em 0.35em 1.25em;
-	z-index: 10000;
+	width: 100%;
+	/* padding: 0.35em 1.25em 0.35em 1.25em; */
 }
 
-.navbar p {
+.nav_custom p {
+	padding-left: 1.75%;
 	font: 20px 'Futura', sans-serif;
-	float: left;
-	display: block;
-	padding: .25em;
   	color: #303A52;
-
 }
 
-.navbar a {
-	padding: 0.5em;
+.nav_custom a {
 	font: 15px 'Lato', sans-serif;
 	color: #393E46;
-	float: right;
+	text-decoration: underline;
 }
 
-.navbar a:hover {
-	color: black;
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: black;
 	font-weight: bolder;
-
-}
-
-.social_button {
-    border: none;
-    cursor: pointer;
 }
 
 .social_icon {
@@ -100,7 +82,6 @@
 }
 
 .about_box {
-	justify-content: center;
 	margin: 0;
 	padding: 3% 6% 3% 6%;
 	clear: both;
@@ -113,16 +94,16 @@
 
 .bio {
     float: left;
-    width: 55%;
 }
 
 .bio_img {
-	padding: 1.5%;
-	margin-left: 55%;  
+	float: left;
+	padding: 2.5%;
 }
 
-.about_image {
-	width: 90%;
+.modalBox {
+	overflow: scroll;
+	margin: 7%;
 }
 
 .project_box {
@@ -132,19 +113,17 @@
 	justify-content: center;
 	clear: both;
 	box-sizing: border-box;
-	height: 60em;
 }
 
 .project_popup {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
-	width: 50%;
 	height: 25em;
 	float: left;
-	box-sizing: border-box;
 	padding: 2%;
 	text-decoration: blink;
+	box-sizing: border-box;
 }
 
 .project_popup img {
@@ -204,6 +183,7 @@
 }
 
 .close_modal {
+	cursor: pointer;
     color: white;
     line-height: 25px;
     position: absolute;
@@ -243,6 +223,10 @@
 }
 
 	/* standard items */
+	
+button {
+
+}
 
 img.center {
 	margin: auto;
