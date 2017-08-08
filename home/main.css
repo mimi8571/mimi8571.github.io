@@ -18,7 +18,9 @@
 
 #keywords {
 	font-style: italic;
-	color: #454553;
+	color: aquamarine;
+	margin: 0;
+	padding-left: 0;
 }
 
 	/* class */
@@ -115,7 +117,7 @@
 	box-sizing: border-box;
 }
 
-.project_popup {
+.btn {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
@@ -124,85 +126,79 @@
 	padding: 2%;
 	text-decoration: blink;
 	box-sizing: border-box;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
 }
 
-.project_popup img {
+.btn p {
+	font: 36px 'Futura', 'Trebuchet MS', sans-serif;
+	color: #2E3B3E;
+	padding: 2.75%;
+}
+
+.btn p:hover, .btn p:focus {
+	text-decoration: underline;
+}
+
+.modal-content {
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    -webkit-transition: opacity 375ms ease-in;
+    -moz-transition: opacity 375ms ease-in;
+    transition: opacity 375ms ease-in;
+    pointer-events: none;
+    padding: 10%; 
+    background: rgba(26, 28, 30, 0.9);  */
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.modal-content > div {
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.modal {
+	background: rgba(26, 28, 30, 0.75);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.modal_size {
+	width: 80%;
+	padding: 3%;
+	margin: 8% auto;
+	background: transparent;
+}
+
+.modal-title, .modal-body p, .modal-body h4{
+	color: mintcream;
+}
+
+.modal-body img {
 	height: 100%;
 	width: auto;
 	box-sizing: border-box;
 }
 
-.project_popup p {
-	font: 40px 'Futura', 'Trebuchet MS', sans-serif;
-	color: #2E3B3E;
-	text-align: left;
-	padding: 8%;
-	bottom: 1em;
-}
-
-.project_popup p:hover, .project_popup p:focus {
-	text-decoration: underline;
-}
-
-/* Popup box attempt 2 */
-
-.project_modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(26, 28, 30, 0.9);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 375ms ease-in;
-    -moz-transition: opacity 375ms ease-in;
-    transition: opacity 375ms ease-in;
-    pointer-events: none;
-    padding: 10%;
-}
-
-.project_modal:target {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.project_modal > div {
-    width: 66%;
-    position: fixed;
-    background: (26, 28, 30, 0.75);
-    /*
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
-    */
-}
-
-.project_modal p, .project_modal h3, .project_modal h4 {
+.close {
 	color: mintcream;
+	color: white;
+	font-size: 3em;
+	font-weight: 100;
+	text-shadow: none;
 }
 
-.close_modal {
-	cursor: pointer;
-    color: white;
-    line-height: 25px;
-    position: absolute;
-    right: 0.5em;
-    text-align: center;
-    top: -10px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
-}
-
-.close_modal p:hover .close_modal p:focus {
-    color: black;
+.close:hover, .close:focus {
+	color: salmon;
 }
 
 .course_box {
@@ -250,7 +246,6 @@ p {
   	padding: 0em 1.5em 1.5em 1.5em;
   	margin: 0em 0.5em 0em 0.5em;
   	text-align: justify;
-
 }
 
 h1 {
@@ -271,7 +266,7 @@ h2 {
 }
 
 h3 {
-	font: 20px 'Futura', sans-serif;
+	font: 22px 'Futura', sans-serif;
   	color: black;
   	padding: 0.5em 0em 0.5em 0em;
 }
