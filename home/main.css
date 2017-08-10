@@ -9,7 +9,7 @@
 	/* ID */
 
 #subtitle {
-	font: 20px 'Lato', sans-serif;
+	font: calc(15px + 0.5vw) 'Lato', sans-serif;
 	font-style: italic;
 	text-align: center;
 	color: white;
@@ -103,11 +103,6 @@
 	padding: 2.5%;
 }
 
-.modalBox {
-	overflow: scroll;
-	margin: 7%;
-}
-
 .project_box {
 	margin: 0;
 	padding: 3% 6% 3% 6%;
@@ -121,7 +116,7 @@
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
-	height: 25em;
+	height: calc(10em + 25vh);
 	float: left;
 	padding: 2%;
 	text-decoration: blink;
@@ -131,8 +126,12 @@
 	box-shadow: none;
 }
 
+.btn:active, .btn:hover, .btn:focus {
+	outline: none;
+}
+
 .btn p {
-	font: 36px 'Futura', 'Trebuchet MS', sans-serif;
+	font: calc(20px + 1.4vw) 'Futura', 'Trebuchet MS', sans-serif;
 	color: #2E3B3E;
 	padding: 2.75%;
 }
@@ -174,7 +173,7 @@
 
 .modal_size {
 	width: 80%;
-	padding: 3%;
+	padding: 0 2% 0 2%;
 	margin: 8% auto;
 	background: transparent;
 }
@@ -199,6 +198,7 @@
 
 .close:hover, .close:focus {
 	color: salmon;
+	outline: 0;
 }
 
 .course_box {
@@ -219,10 +219,6 @@
 }
 
 	/* standard items */
-	
-button {
-
-}
 
 img.center {
 	margin: auto;
@@ -249,7 +245,7 @@ p {
 }
 
 h1 {
-	font: 63px 'Lato', sans-serif;
+	font: calc(30px + 2.3vw) 'Lato', sans-serif;
 	font-weight: 300;
 	line-height: 1em;
 	text-align: center;
