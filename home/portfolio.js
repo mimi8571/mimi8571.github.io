@@ -52,4 +52,33 @@ modal.addEventListener('click', function(e) {
 modal.children[0].addEventListener('click', function(e) {
     e.stopPropagation();
 }, false);
+
+
+			var modal = document.getElementById('modalBox');    //get modal/popup container
+			var open = document.getElementsByClassName("project_modal")[0];    //get container to open modal
+			var close = document.getElementsByClassName("close_modal")[0];    //get button to close modal
+
+			//open modal
+			open.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			//close modal by X-button
+			close.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			//close modal by clicking outside window
+			window.onclick = function(e) {
+			    if (e.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+
+			//close modal by escape key
+			document.addEventListener('keyup', function(e) {
+			    if (e.keyCode == 27) {
+			        modalClose();
+			    }
+			});
 */
