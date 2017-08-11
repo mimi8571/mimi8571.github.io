@@ -1,6 +1,18 @@
-<!--
-<meta http-equiv="refresh" content="0; url=https://sites.google.com/view/meganlau/home" />
--->
-<head>
-    <link rel="import" href="./home/home.html">
-</head>
+<!doctype html>
+
+<html>
+
+	<head>
+	    <script src="jquery.js"></script> 
+	    <script> 
+	    	$(function(){
+	      		$("#includedContent").load("/home/home.html"); 
+	    	});
+	    </script> 
+    </head> 
+
+  	<body> 
+    	<div id="includedContent"></div>
+  	</body> 
+	
+</html>
