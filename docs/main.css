@@ -12,7 +12,6 @@
 	color: white;
 	letter-spacing: 0.35px;
 }
-
 #keywords {
 	font-style: italic;
 	color: aquamarine;
@@ -20,21 +19,21 @@
 	padding-left: 0;
 }
 
+.back_img {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+	background-size: cover;
+	width: 100%; height: 100vh;
+	min-width: 100%; min-height: 600px;
+	overflow: hidden;
+}
 .welcome_box {
 	background-image: url(./images/valenciabeach.JPG);
-	background-size: cover;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
-	min-width: 100%;
-	min-height: 600px;
-  	overflow: hidden;
 	top: 0; left: 0; right: 0;
 }
 .welcome_text {
-	position: center center;
 	text-align: center;
 	width: 100%;
 }
@@ -64,12 +63,6 @@
 	font-weight: bolder;
 }
 
-.social_icon {
-	width: 2em;
-	height: 2em;
-	display: block;
-}
-
 .about_box {
 	margin: 0;
 	padding: 3% 6% 3% 6%;
@@ -79,13 +72,8 @@
     margin: 0;
     padding: 0 1.5em 2.5em 0;
 }
-.bio {
-    float: left;
-}
-.bio_img {
-	float: left;
-	padding: 2.5%;
-}
+.bio { float: left; }
+.bio_img { padding: 2.5%; }
 
 .project_box {
 	margin: 0;
@@ -135,11 +123,7 @@
 	background: transparent;
 }
 .modal-title, .modal-body p, .modal-body h4, .modal-body h5, .modal-body ul { color: mintcream; }
-.modal-body img {
-	height: 100%;
-	width: auto;
-	box-sizing: border-box;
-}
+.modal-body img { box-sizing: border-box; }
 .close {
 	color: white;
 	font-size: 3.25em;
@@ -157,35 +141,29 @@
 
 .contact_box {
 	background: url("./images/sunsetbokeh.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-blend-mode: overlay;
-	background-size: cover;
-	width: 100%; height: 100vh;
 }
-.social_icon { color: white; display: inline-block; margin: 0.35em;}
+.social_icon { display: inline-block; margin: 0.35em; height: 1.5em; }
 
 link { color: rgba(34,110,147,1.0000000000); }
-a {	color: salmon;}
 ul {
 	color: black;
 	font: 16px 'Lato', sans-serif;
 	list-style: none;
-	margin-bottom: 1em;
-	margin-left: 1.2em;
-	text-indent: -1.2em;
+	margin-left: 1.3em;
+	text-indent: -1.3em;
 }
-/* li { margin-left: 25px;	padding-left: -25px; }
-li:before { content: "»"; padding-right: 5px; } */
+.sp li { margin-left: 12px;	text-indent: -12px; }
+.sp li:before { content: "»"; padding-right: 5px; }
 p {
 	color: black;
 	font: 16px 'Lato', sans-serif;
   	line-height: 1.63;
   	font-weight: 400;
-  	padding: 0em 1.5em 1.5em 1.5em;
-  	margin: 0em 0.5em 0em 0.5em;
+  	padding-bottom: 1.25em;
+  	margin: 0;
   	text-align: justify;
 }
+br { line-height: 150%; }
 h1 {
 	font: calc(30px + 2.3vw) 'Lato', sans-serif;
 	font-weight: 300;
@@ -196,18 +174,18 @@ h1 {
 	padding-bottom: 0.2em;
 }
 h2 {
-	font: 24px 'Futura', sans-serif;
+	font: 24px 'Futura', 'Trebuchet MS', sans-serif;
 	color: #2E3B3E;
 	margin-top: 0.75em; margin-bottom: 0.75em;
 }
 h3 {
 	font: 20px 'Futura', sans-serif;
   	color: black;
-  	padding: 0.5em 0em 0.5em 0em;
+  	padding-top: 0.5em;
 }
 h4 {
 	font: 18px 'Lato', sans-serif;
 	font-style: italic;
-	padding-bottom: 0.37em;
+	text-decoration: underline;
+	padding-top: 0.37em;
 }
-h5 { font: 18px 'Lato', sans-serif; text-decoration: underline; }

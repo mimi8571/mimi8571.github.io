@@ -19,7 +19,7 @@
 
 	<body>
 		<!-- Title Page -->
-		<div id="welcome" class="welcome_box smooth_scroll">
+		<div id="welcome" class="welcome_box back_img smooth_scroll">
 			<div class="welcome_text" id="content">
 				<h1>Hi, I'm Megan!</h1>
 				<p id="subtitle">Purdue'19  |  Mechanical Engineering</p>
@@ -55,12 +55,12 @@
 					and Illustrator. I also love challenging myself at <a href="https://devpost.com/moylau27" target="_blank">hackathons</a> 
 					with not just sleep deprivation, but also coding to make physical creations come to life! </p>
 				</div>
-				<div class="bio_img col-sm-5"><img src="./images/self.jpg" style="width: 100%" /></div>
+				<div class="bio bio_img col-sm-5"><img src="./images/self.jpg" style="width: 100%" /></div>
 			</div>
 		</div>
 
 		<!-- Engineering Projects -->
-		<div class="project_box smooth_scroll container-fluid" id="projects">
+		<div class="project_box smooth_scroll container-fluid sp" id="projects">
 			<h2>Projects</h2>
 			<div class="row" style="padding: 1%"">
 				<button type="button" class="btn btn-info col-sm-6" style="background-color: cadetblue" data-toggle="modal" data-target="#2017_PDAssist"><p>Assistive Device for Paraplegic Drivers</p></button>
@@ -77,24 +77,16 @@
     					</div>
 						<div class="modal-body">
 							<section>
-								<h5>About</h5>
-								<p>In a sophomore mechanical engineering design course (<a href="#courses" data-dismiss="modal">ME 263</a>), the class was tasked to conduct market research, search for relevant patents, design, CAD, and build a prototype of any assistive device. My team decided to address the need for hand-operated vehicles used by those whom experience difficulties with leg movements and paraplegics, or individuals paralyzed from the waist down. Due to limited leg movement, these people cannot operate a vehicle on their own and must use a device that can control both foot pedals while steering the wheel.</p>
+								<h4>Overview</h4>
+								<img src="./images/2017_PDAssist/apparatus.png" class="col-sm-4" style="float: right;" />
+								<p>In a sophomore mechanical engineering design course (<a href="#courses" style="color: salmon;" data-dismiss="modal">ME 263</a>), the class was tasked to conduct market research, search for relevant patents, design, CAD, and build a prototype of any assistive device. My team decided to address the need for hand-operated vehicles used by those whom experience difficulties with leg movements and paraplegics, or individuals paralyzed from the waist down. Due to limited leg movement, these people cannot operate a vehicle on their own and must use a device that can control both foot pedals while steering the wheel. </p>
 								<p>While looking through current products on the U.S. market, we found quite a few problems with the existing benchmarks. Many of the hand-controlled designs were ineffective, fragile, difficult to install, and intrusive to non-handicapped drivers (device may cover or replace the typical steering wheel and foot pedals). Also, though products like electronic hand control systems function well and have good customer reviews, they are not affordable solutions. We combined these with findings from interviews with members of our target audience to create a list of requirements for our product.</p>
-								<p>Aiming to design a system that avoids most issues with current products while keeping human-centered design considerations in mind, we wanted to ensure that the final product is...</p>
-								<ul>
-									<li>ergonomic / comfortable</li>
-									<li>safe to use</li>
-									<li>not obstructive to any driver</li>
-									<li>and inexpensive.</li>
-								</ul>
-								<p>our team (Team DREAM) eventually created “DREAM Driving” so people who cannot operate the foot pedals in a car may drive wherever they want.</p>
+								<p>Aiming to design a system that avoids issues with current products while keeping human-centered design considerations in mind, we wanted to ensure that the final product is ergonomic / comfortable, safe to use, not obstructive to any driver, and inexpensive. At the end of the semester, our team (Team DREAM) eventually created “DREAM Driving” so people who cannot operate the foot pedals in a car may drive whenever and wherever they want.</p>
 							</section>
 							<section>
-								<h5>How It Works</h5>
+								<h4>How It Works</h4>
 								<p>This driver assistive device has intuitive hand controls, such that the user need only push the entire handle to control the brake pedal and pull on the lever to accelerate. While the user steers with one hand, the other is placed on the hand controls, which consists of a typical bicycle grip and bike brake lever secured to one end of an L-shaped tube. This tube is attached to a single-plane pivot that is mounted on the vehicle’s dashboard. Starting from within the L-shaped tube, two bowden cables run along the kick panel and run behind the car pedals with 3D-printed attachments. When force is applied to the hand controls, the cables pull on their respective pedals back towards the front of the vehicle.</p>
 							</section>
-
-
 						</div>
 					</div>
 				</div>
@@ -175,9 +167,9 @@
 							to do well at our first hackathon, together my friends and I created... Natural 
 							Telepresence. This small cardboard robot can be driven around with controls on a web 
 							app and features a camera mounted on a gimbal. When looking through a Google Cardboard, 
-							the user can view a live-stream video from the robot's perspective. <br/> Personally, 
-							this was a first and favorite hackathon experience not only because I helped build a robot 
-							with pieces of cardboard, but my friends introduced me to the world of programming. 
+							the user can view a live-stream video from the robot's perspective.</p>
+							<p>Personally, this was a first and favorite hackathon experience not only because I helped build 
+							a robot with pieces of cardboard, but my friends introduced me to the world of programming. 
 							As a complete novice in coding, learning to use <a href="http://wiki.ros.org/">ROS</a> 
 							python packages proved to be the more difficult challenge. But eventually, I learned to use 
 							it to pass the smartphone's gyroscope data to the controller for the gimbal, which 
@@ -192,7 +184,7 @@
 		</div>
 
 		<!-- Courses -->
-		<div class="course_box smooth_scroll" id="courses">  <!-- Shift+Option+backslash = » -->
+		<div class="course_box smooth_scroll sp" id="courses">  <!-- Shift+Option+backslash = » -->
 			<h2>Courses</h2>
 			<div>
 				<h3>Fall 2017 (In Progress)</h3>
@@ -223,7 +215,7 @@
 			</div>
 		</div>
 
-		<div class="contact_box" id="contact">
+		<div class="contact_box back_img" id="contact">
 			<div>
 				<h1 style="padding-top: 42vh; color: #1a1c1e">Contact</h1>
 				<p style="text-align: center">via</p>
