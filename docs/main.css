@@ -119,8 +119,10 @@
 	margin: 8% auto;
 	background: transparent;
 }
-.modal-title, .modal-body p, .modal-body h4, .modal-body h5, .modal-body ul { color: mintcream; }
+.modal-title, .modal-body p, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body ul { color: mintcream;}
+.modal h3 {padding-bottom: 0.85em;}
 .modal-body img { box-sizing: border-box; }
+.carousel-control{background: no-repeat none;}
 .close {
 	color: white;
 	font-size: 3.25em;
@@ -190,5 +192,6 @@ h4 {
 	font: 18px 'Lato', sans-serif;
 	font-style: italic;
 	text-decoration: underline;
-	padding-top: 0.37em;
+	margin: 0;
+	padding-bottom: 0.37em;
 }
