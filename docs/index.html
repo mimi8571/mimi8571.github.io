@@ -19,7 +19,7 @@
 
 	<body>
 		<!-- Title Page -->
-		<div id="welcome" class="welcome_box back_img smooth_scroll">
+		<div id="welcome" class="welcome_box smooth_scroll">
 			<div class="welcome_text" id="content">
 				<h1>Hi, I'm Megan!</h1>
 				<p id="subtitle">Purdue'19  |  Mechanical Engineering</p>
@@ -63,10 +63,10 @@
 		<div class="project_box smooth_scroll container-fluid sp" id="projects">
 			<h2>Projects</h2>
 			<div class="row" style="padding: 1%"">
-				<button type="button" class="btn btn-info col-sm-6" style="background-color: cadetblue" data-toggle="modal" data-target="#2017_PDAssist"><p>Assistive Device for Paraplegic Drivers</p></button>
-				<button type="button" class="btn btn-info col-sm-6" style="background-color: cornsilk" data-toggle="modal" data-target="#2017_CATIAMod"><p>CATIA Surface Modeling</p></button>
-				<button type="button" class="btn btn-info col-sm-6" style="background-color: #E8F1F5" data-toggle="modal" data-target="#2016_AutoSuit"><p>Autonomous Suitcase</p></button>
-				<button type="button" class="btn btn-info col-sm-6" style="background-color: #A9EEE6" data-toggle="modal" data-target="#2016_NatuTele"><p>Natural Telepresence</p></button>
+				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: cadetblue" data-toggle="modal" data-target="#2017_PDAssist"><p>Assistive Device for Paraplegic Drivers</p></button></div>
+				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: cornsilk" data-toggle="modal" data-target="#2017_CATIAMod"><p>CATIA Surface Modeling</p></button></div>
+				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: #E8F1F5" data-toggle="modal" data-target="#2016_AutoSuit"><p>Autonomous Suitcase</p></button></div>
+				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: #A9EEE6" data-toggle="modal" data-target="#2016_NatuTele"><p>Natural Telepresence</p></button></div>
       		</div>     			
  			<div id="2017_PDAssist" class="modal fade" role="dialog">
     			<div class="modal_size modal-dialog">
@@ -98,16 +98,45 @@
     						<button type="button" class="close" data-dismiss="modal">&times;</button>
     						<h3 class="modal-title">CATIA V5 Surface Modeling</h3>
     					</div>
-						<div class="modal-body">
-							<div>
+						<div class="modal-body row">
+							<div id="CATIAimg" class="carousel slide col-sm-7" data-ride="carousel">
+								<ol class="carousel-indicators">
+							      <li data-target="#CATIAimg" data-slide-to="0" class="active"></li>
+							      <li data-target="#CATIAimg" data-slide-to="1"></li>
+							      <li data-target="#CATIAimg" data-slide-to="2"></li>
+							      <li data-target="#CATIAimg" data-slide-to="3"></li>
+							      <li data-target="#CATIAimg" data-slide-to="4"></li>
+							      <li data-target="#CATIAimg" data-slide-to="5"></li>
+							    </ol>
+							    <div class="carousel-inner">
+						            <div class="item active">
+						            	<img src="images/2017_CATIAMod/car.png" style="width:100%;">
+						            	<div class="carousel-caption"><h4>Entire Audi R8 Vehicle</h4></div>
+						            </div>
+						            <div class="item"><img src="chicago.jpg" alt="sa;lkdf" style="width:100%;"></div>
+						    		<div class="item"><img src="ny.jpg" alt="New york" style="width:100%;"></div>
+						    		<div class="item"><img src="ny.jpg" alt="New york" style="width:100%;"></div>
+						    		<div class="item"><img src="ny.jpg" alt="New york" style="width:100%;"></div>
+						    		<div class="item"><img src="ny.jpg" alt="New york" style="width:100%;"></div>
+						    	</div>
+						    	<a class="left carousel-control" href="#CATIAimg" data-slide="prev">
+							        <span class="glyphicon glyphicon-chevron-left"></span>
+							    	<span class="sr-only">Previous</span>
+							    </a>
+							    <a class="right carousel-control" href="#CATIAimg" data-slide="next">
+							    	<span class="glyphicon glyphicon-chevron-right"></span>
+							    	<span class="sr-only">Next</span>
+							    </a>
+							</div>
+							<div class="col-sm-5">
 								<h4>Audi R8</h4>
 								<p>As a first surface modeling project, I decided to challenge myself with CADing 
 								the body of a car.  I focused on learning to make surfaces with freestyle curves 
 								based on existing drawings.<br/>After finding the blueprints of the Audi R8, I 
 								used the Sketch Tracer workbench to import, position, and scale the four views 
-								(front, back, top, side) to a common axis.  I used the 3D curve tool inside the 
+								(front, back, top, side) to a common axis.  Afterwards I used the 3D curve tool inside the 
 								Freestyle workbench to draw individual paths for half of the car, then adjusted 
-								the cartesian coordinates and imposed tangency for each point. I moved on to 
+								the cartesian coordinates and imposed tangency for each point. Finally, I moved on to 
 								filling the paths in Generative Shape Design, and finally mirroring the surfaces 
 								to create the entire vehicle.</p>
 							</div>
@@ -191,13 +220,13 @@
 				<ul>
 					<li>ME 309 Fluid Mechanics » </li>
 					<li>ME 323 Mechanics of Materials » </li>
-					<li>ME 365 Measurement Systems »  </li>
+					<li>ME 365 Systems &amp Measurements » use National Instruments myRIO </li>
 					<li>MSE 320 Structures &amp Properties of Materials »  </li>
 				</ul>
 			</div>
 			<div>
 				<h3>Summer 2017</h3>
-				<p>Study Abroad in Spain</p>
+				<p>Testing Compact Power Systems // Study Abroad in Spain</p>
 			</div>
 			<div>
 				<h3>Spring 2017</h3>
@@ -211,19 +240,20 @@
 			</div>
 			<div>
 				<h3>Other Courses:</h3>
-				<p>Thermodynamics 1 (ME 200); Statics (ME 270); Partial Differential Equations (MA 303)</p>
+				<p>Thermodynamics 1; Statics; Partial Differential Equations</p>
 			</div>
 		</div>
 
-		<div class="contact_box back_img" id="contact">
+		<div class="contact_box" id="contact">
 			<div>
 				<h1 style="padding-top: 42vh; color: #1a1c1e">Contact</h1>
 				<p style="text-align: center">via</p>
 				<p style="text-align: center;">
 					<a href="https://www.linkedin.com/in/meganolau/" target="_blank"><img src="./images/logos/linkedin.png" class="social_icon"/></a>
 					<a href="https://github.com/moylau27/" target="_blank"><img src="./images/logos/github.png" class="social_icon"/></a>
-					<a href="https://devpost.com/moylau27" target="_blank"><img src="./images/logos/devpost.png" class="social_icon"/></a>
-					<a href="https://twitter.com/meeeganlau" target="_blank"><img src="./images/logos/twitter.png" class="social_icon"/></a>
+					<a href="https://devpost.com/moylau27" target="_blank"><img src="./images/logos/devpost_48.png" class="social_icon"/></a>
+					<a href="https://twitter.com/meeeganlau" target="_blank"><img src="./images/logos/twitter-c.png" class="social_icon"/></a>
+					<a href="https://facebook.com/meganolau" target="_blank"><img src="./images/logos/fb.png" class="social_icon"/></a>
 				</p>
 			</div>
 		</div>
@@ -237,7 +267,7 @@
 			      $('html, body').animate({
 			        scrollTop: $(hash).offset().top
 			    	}, 625, function(){ 
-			    	window.location.hash = hash; });			    	}
+			    	window.location.hash = hash; }); }
 		  	}); });
 		</script>
 	</body>
