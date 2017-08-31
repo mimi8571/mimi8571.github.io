@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Megan Lau</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./main.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+
+	<body>
+		<!-- Title Page -->
+		<div id="welcome" class="welcome_box smooth_scroll">
+			<div class="welcome_text" id="content">
+				<h1>Hi, I'm Megan!</h1>
+				<p id="subtitle">Purdue'19  |  Mechanical Engineering</p>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-fixed-top navbar-static-top">
+			<div class="container-fluid nav_custom">
+	    		<p class="navbar-brand">Megan Lau</p>
+	    		<div class="collapse navbar-collapse">
+				    <ul class="nav navbar-nav navbar-right navbar-link" style="padding-right: 1.25%">
+				    	<li><a href="#about">About</a></li>
+				    	<li><a href="#projects">Projects</a></li>
+				    	<li><a href="#courses">Courses</a></li>
+				    	<li><a href="#contact">Contact</a></li>
+				    </ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- About Me -->
+		<div class="about_box smooth_scroll container-fluid" id="about">
+			<div class="row">
+				<div class="bio col-sm-7">
+					<h2>About Me</h2>
+					<p>I'm Megan Lau from San Jose, California. <br/> I study mechanical engineering at 
+					Purdue University in West Lafayette, Indiana. <br/> I spend my time in school doing 
+					race car chassis design and manufacturing in FSAE Electric. On top of tutoring 
+					people in math and engineering-related classes, I work as a research assistant at 
+					<a href="http://www.deboer-lab.engineer/" target="_blank">DeBoer Lab</a> to understand how to better 
+					support under-resourced students through engineering education. <br/> During my spare 
+					time, I enjoy capturing moments with my DSLR camera, and playing with Adobe Photoshop 
+					and Illustrator. I also love challenging myself at <a href="https://devpost.com/moylau27" target="_blank">hackathons</a> 
+					with not just sleep deprivation, but also coding to make physical creations come to life! </p>
+				</div>
+				<div class="bio bio_img col-sm-5"><img src="./images/self.jpg" style="width: 100%" /></div>
+			</div>
+		</div>
+
+		<!-- Engineering Projects -->
+		<div class="project_box smooth_scroll container-fluid sp" id="projects">
+			<h2>Projects</h2>
+			<div class="row" style="padding: 1%"">
+				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: cadetblue" data-toggle="modal" data-target="#2017_PDAssist"><p>Assistive Device for Paraplegic Drivers</p></button></div>
+				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: cornsilk" data-toggle="modal" data-target="#2017_CATIAMod"><p>CATIA Surface Modeling</p></button></div>
+				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: #E8F1F5" data-toggle="modal" data-target="#2016_AutoSuit"><p>Autonomous Suitcase</p></button></div>
+				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: #A9EEE6" data-toggle="modal" data-target="#2016_NatuTele"><p>Natural Telepresence</p></button></div>
+      		</div>     			
+ 			<div id="2017_PDAssist" class="modal fade" role="dialog">
+    			<div class="modal_size modal-dialog">
+    				<div class="modal-content">
+    					<div class="modal-header">
+    						<button type="button" class="close" data-dismiss="modal">&times;</button>
+    						<h3 class="modal-title">Paraplegic Drive Assist</h3>
+    					</div>
+						<div class="modal-body">
+							<section>
+								<h4>Overview</h4>
+								<img src="./images/2017_PDAssist/apparatus.png" class="col-sm-4" style="float: right;" />
+								<p>In a sophomore mechanical engineering design course (<a href="#courses" style="color: salmon;" data-dismiss="modal">ME 263</a>), the class was tasked to conduct market research, search for relevant patents, design, CAD, and build a prototype of any assistive device. My team decided to address the need for hand-operated vehicles used by those whom experience difficulties with leg movements and paraplegics, or individuals paralyzed from the waist down. Due to limited leg movement, these people cannot operate a vehicle on their own and must use a device that can control both foot pedals while steering the wheel. </p>
+								<p>While looking through current products on the U.S. market, we found quite a few problems with the existing benchmarks. Many of the hand-controlled designs were ineffective, fragile, difficult to install, and intrusive to non-handicapped drivers (device may cover or replace the typical steering wheel and foot pedals). Also, though products like electronic hand control systems function well and have good customer reviews, they are not affordable solutions. We combined these with findings from interviews with members of our target audience to create a list of requirements for our product.</p>
+								<p>Aiming to design a system that avoids issues with current products while keeping human-centered design considerations in mind, we wanted to ensure that the final product is ergonomic / comfortable, safe to use, not obstructive to any driver, and inexpensive. At the end of the semester, our team (Team DREAM) eventually created “DREAM Driving” so people who cannot operate the foot pedals in a car may drive whenever and wherever they want.</p>
+							</section>
+							<section>
+								<h4>How It Works</h4>
+								<p>This driver assistive device has intuitive hand controls, such that the user need only push the entire handle to control the brake pedal and pull on the lever to accelerate. While the user steers with one hand, the other is placed on the hand controls, which consists of a typical bicycle grip and bike brake lever secured to one end of an L-shaped tube. This tube is attached to a single-plane pivot that is mounted on the vehicle’s dashboard. Starting from within the L-shaped tube, two bowden cables run along the kick panel and run behind the car pedals with 3D-printed attachments. When force is applied to the hand controls, the cables pull on their respective pedals back towards the front of the vehicle.</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="2017_CATIAMod" class="modal fade" role="dialog">
+    			<div class="modal_size modal-dialog">
+    				<div class="modal-content">
+    					<div class="modal-header">
+    						<button type="button" class="close" data-dismiss="modal">&times;</button>
+    						<h3 class="modal-title">CATIA V5 Surface Modeling</h3>
+    					</div>
+						<div class="modal-body row">
+							<div id="CATIAimg" class="carousel slide col-sm-7" data-ride="carousel">
+								<ol class="carousel-indicators">
+							      <li data-target="#CATIAimg" data-slide-to="0" class="active"></li>
+							      <li data-target="#CATIAimg" data-slide-to="1"></li>
+							      <li data-target="#CATIAimg" data-slide-to="2"></li>
+							      <li data-target="#CATIAimg" data-slide-to="3"></li>
+							      <li data-target="#CATIAimg" data-slide-to="4"></li>
+							      <li data-target="#CATIAimg" data-slide-to="5"></li>
+							    </ol>
+							    <div class="carousel-inner">
+						            <div class="item active">
+						            	<img src="images/2017_CATIAMod/car.png" style="width:100%;">
+						            	<div class="carousel-caption"><h4>Entire Audi R8 Vehicle</h4></div>
+						            </div>
+						            <div class="item"><img src="chicago.jpg" alt="sa;lkdf" style="width:100%;"></div>
+						    		<div class="item"><img src="ny.jpg" alt="New york" style="width:100%;"></div>
+						    		<div class="item"><img src="ny.jpg" alt="New york" style="width:100%;"></div>
+						    		<div class="item"><img src="ny.jpg" alt="New york" style="width:100%;"></div>
+						    		<div class="item"><img src="ny.jpg" alt="New york" style="width:100%;"></div>
+						    	</div>
+						    	<a class="left carousel-control" href="#CATIAimg" data-slide="prev">
+							        <span class="glyphicon glyphicon-chevron-left"></span>
+							    	<span class="sr-only">Previous</span>
+							    </a>
+							    <a class="right carousel-control" href="#CATIAimg" data-slide="next">
+							    	<span class="glyphicon glyphicon-chevron-right"></span>
+							    	<span class="sr-only">Next</span>
+							    </a>
+							</div>
+							<div class="col-sm-5">
+								<h4>Audi R8</h4>
+								<p>As a first surface modeling project, I decided to challenge myself with CADing 
+								the body of a car.  I focused on learning to make surfaces with freestyle curves 
+								based on existing drawings.<br/>After finding the blueprints of the Audi R8, I 
+								used the Sketch Tracer workbench to import, position, and scale the four views 
+								(front, back, top, side) to a common axis.  Afterwards I used the 3D curve tool inside the 
+								Freestyle workbench to draw individual paths for half of the car, then adjusted 
+								the cartesian coordinates and imposed tangency for each point. Finally, I moved on to 
+								filling the paths in Generative Shape Design, and finally mirroring the surfaces 
+								to create the entire vehicle.</p>
+							</div>
+							<div>
+								<h4>Canon T2i Digital Camera</h4>
+								<p>Unlike the Audi R8, I used this exercise to further develop surface modeling 
+								skills while practicing 3D modeling real-life objects without blueprints or drawings.
+								<br/>Measuring my own camera with calipers, I translated dimensions of five different 
+								parts of the camera into a surface model. Inside generative shape design, I first 
+								modeled the lens by creating cylinders and using the circular pattern to rotate 
+								small square ridges that represent the rubber grip used to adjust focal length of 
+								the lens. Next, I used curves in both the frontal and profile planes to create both 
+								the sun shield and lens cover. With both generative shape design and freestyle workbenches, 
+								I drew paths and moved individual points to create a rough model of the camera body. T
+								he last component is the knob used to switch between different camera modes (e.g. 
+								portait, automatic). Similar to the grip on the lens, I rotated small ridges on a conical 
+								frustrum to complete the CAD exercise.</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer"><p id="keywords">» CAD, CATIA V5, surface modeling</p></div>						
+				</div>
+			</div>
+ 			<div id="2016_AutoSuit" class="modal fade" role="dialog">
+    			<div class="modal_size modal-dialog">
+    				<div class="modal-content">
+    					<div class="modal-header">
+    						<button type="button" class="close" data-dismiss="modal">&times;</button>
+    						<h3 class="modal-title">Autonomous Suitcase</h3>
+    					</div>
+						<div class="modal-body">
+							<img src="./images/autonsuitcase.jpg" />
+							<p>My friends and I decided we wanted our carry-on luggages to follow us around the 
+							airport so we could have a hands-free journey sometime in the near future. We thought 
+							of problems like how to support the luggage, move the entire apparatus, and have the 
+							frame follow its user. <br/> With an Xbox Kinect 
+							and prior experience with brushless skateboard motors, we split tasks amongst each 
+							other. As two people CAD-ed and laser cut the luggage frame using MDF boards, I worked 
+							with another friend to write the necessary program in Python which would allow the 
+							system to move. We utilized ROS python packages to control the skateboard wheels and 
+							speed controllers. Then, integrated Kinect's existing motion tracking code such 
+							that the wheels would move forward and turn in the same direction as the person being 
+							tracked by the Kinect. Thus, code + MDF luggage frame = Autonomous Suitcase! </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="2016_NatuTele" class="modal fade" role="dialog">
+    			<div class="modal_size modal-dialog">
+    				<div class="modal-content">
+    					<div class="modal-header">
+    						<button type="button" class="close" data-dismiss="modal">&times;</button>
+    						<h3 class="modal-title">Natural Telepresence</h3>
+    					</div>
+						<div class="modal-body">
+							<p>Inspired by our passion for robots, interests in virtual reality, and motivation 
+							to do well at our first hackathon, together my friends and I created... Natural 
+							Telepresence. This small cardboard robot can be driven around with controls on a web 
+							app and features a camera mounted on a gimbal. When looking through a Google Cardboard, 
+							the user can view a live-stream video from the robot's perspective.</p>
+							<p>Personally, this was a first and favorite hackathon experience not only because I helped build 
+							a robot with pieces of cardboard, but my friends introduced me to the world of programming. 
+							As a complete novice in coding, learning to use <a href="http://wiki.ros.org/">ROS</a> 
+							python packages proved to be the more difficult challenge. But eventually, I learned to use 
+							it to pass the smartphone's gyroscope data to the controller for the gimbal, which 
+							allowed the robot's camera to turn the same way as the user's head. Our greatest 
+							challenge was avoiding gimbal lock and we had overcome this by converting the phone's Euler 
+							angles to quaternions.<br/></p> 
+							<p style="font-style: italic">Read more <a href="https://devpost.com/software/natural_telepresence">here</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Courses -->
+		<div class="course_box smooth_scroll sp" id="courses">  <!-- Shift+Option+backslash = » -->
+			<h2>Courses</h2>
+			<div>
+				<h3>Fall 2017 (In Progress)</h3>
+				<ul>
+					<li>ME 309 Fluid Mechanics » </li>
+					<li>ME 323 Mechanics of Materials » </li>
+					<li>ME 365 Systems &amp Measurements » use National Instruments myRIO </li>
+					<li>MSE 320 Structures &amp Properties of Materials »  </li>
+				</ul>
+			</div>
+			<div>
+				<h3>Summer 2017</h3>
+				<p>Testing Compact Power Systems // Study Abroad in Spain</p>
+			</div>
+			<div>
+				<h3>Spring 2017</h3>
+				<ul>
+					<li>ME 274 Dynamics »  conservation principles; Newton's laws of motion; vibrations; 
+					systematic problem-solving</li>
+					<li>ME 263 Intro to Mechanical Engineering Design »  team design project w/ market 
+					research, CAD, fabrication; assess product performance in the U.S. market </li>
+					<li>ECE 201 Linear Circuit Analysis »  fundamentals of electronics; build simple circuits</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Other Courses:</h3>
+				<p>Thermodynamics 1; Statics; Partial Differential Equations</p>
+			</div>
+		</div>
+
+		<div class="contact_box" id="contact">
+			<div>
+				<h1 style="padding-top: 42vh; color: #1a1c1e">Contact</h1>
+				<p style="text-align: center">via</p>
+				<p style="text-align: center;">
+					<a href="https://www.linkedin.com/in/meganolau/" target="_blank"><img src="./images/logos/linkedin.png" class="social_icon"/></a>
+					<a href="https://github.com/moylau27/" target="_blank"><img src="./images/logos/github.png" class="social_icon"/></a>
+					<a href="https://devpost.com/moylau27" target="_blank"><img src="./images/logos/devpost_48.png" class="social_icon"/></a>
+					<a href="https://twitter.com/meeeganlau" target="_blank"><img src="./images/logos/twitter-c.png" class="social_icon"/></a>
+					<a href="https://facebook.com/meganolau" target="_blank"><img src="./images/logos/fb.png" class="social_icon"/></a>
+				</p>
+			</div>
+		</div>
+
+		<!-- Smooth scrolling -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $("a").on('click', function(event) {
+			    if (this.hash !== "") {
+			      event.preventDefault(); var hash = this.hash;
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			    	}, 625, function(){ 
+			    	window.location.hash = hash; }); }
+		  	}); });
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
