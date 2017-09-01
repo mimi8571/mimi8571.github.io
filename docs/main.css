@@ -137,6 +137,7 @@
 	justify-content: center;
 	clear: both;
 }
+.course{font-style: normal; color: black; font-weight: bold;}
 
 .contact_box {
 	background: url("./images/sunsetbokeh.jpg");
@@ -151,15 +152,16 @@
 .social_icon:hover, .social_icon:focus { opacity: 0.8; }
 
 link { color: rgba(34,110,147,1.0000000000); }
-ul {
-	color: black;
+.course_box p, ul {
+	color: #393E46;
 	font: 16px 'Lato', sans-serif;
-	list-style: none;
+	font-style: italic;
+	list-style: square inside;
 	margin-left: 1.3em;
-	text-indent: -1.3em;
+	text-indent: -1.3em; 
 }
-.sp li { margin-left: 12px;	text-indent: -12px; }
-.sp li:before { content: "»"; padding-right: 5px; }
+.sp li { margin-left: 15px;	text-indent: -22px; padding-bottom: 0.5em;}
+.sp li:before { padding-right: 3px; }
 p {
 	color: black;
 	font: 16px 'Lato', sans-serif;
@@ -186,7 +188,7 @@ h2 {
 h3 {
 	font: 20px 'Futura', sans-serif;
   	color: black;
-  	padding-top: 0.5em;
+  	padding-top: 0.05em;
 }
 h4 {
 	font: 18px 'Lato', sans-serif;
