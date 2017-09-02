@@ -12,12 +12,6 @@
 	color: white;
 	letter-spacing: 0.35px;
 }
-#keywords {
-	font-style: italic;
-	color: aquamarine;
-	margin: 0;
-	padding-left: 0;
-}
 
 .welcome_box {
 	background-image: url(./images/valenciabeach.JPG);
@@ -82,6 +76,12 @@
 	box-sizing: border-box;
 }
 .project_box .col-sm-6 { padding: 0; }
+.sub span {
+	text-transform: uppercase; 
+	font-weight: bold; 
+	font-style: italic;
+	letter-spacing: 0.04em;
+}  
 .btn {
 	position: relative;
 	height: calc(10em + 25vh);
@@ -122,6 +122,12 @@
 .modal-title, .modal-body p, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body ul { color: mintcream;}
 .modal h3 {padding-bottom: 0.85em;}
 .modal-body img { box-sizing: border-box; }
+.modal-footer { padding-right: 0; }
+.modal-footer p{
+	font-style: italic;
+	color: aquamarine;
+	text-align: right;
+}
 .carousel-control{background: no-repeat none;}
 .close {
 	color: white;
@@ -197,3 +203,4 @@ h4 {
 	margin: 0;
 	padding-bottom: 0.37em;
 }
+section {padding-bottom: 2.25em;}
