@@ -1,17 +1,29 @@
+/****************************************************************
+************************** COLOR SCHEMA *************************
+
+
+   White 				#fff
+   Dark Sapphire Blue 	#303A52
+   Grey Cloud Burst		#393E46
+   Cornflower Blue 		#226e93
+   Space Gray			#2E3B3E
+   Salmon				#fa8072
+   Aquamarine			#7fffd4
+
+   FONT(S)
+   Lato
+   font-family: 'Caveat', cursive;
+   font-family: 'Caveat Brush', cursive;
+
+****************************************************************/
+
+/************************ GENERAL ***********************/
 * {
 	/* border: 1px solid rgba(0, 0, 0, 0.35); */
 	margin: 0; padding: 0; box-sizing: border-box;
 }
 
-	/* ID */
-
-#subtitle {
-	font: calc(15px + 0.5vw) 'Lato', sans-serif;
-	font-style: italic;
-	text-align: center;
-	color: white;
-	letter-spacing: 0.35px;
-}
+/*************************** HOME ***************************/
 
 .welcome_box {
 	background-image: url(./images/valenciabeach.JPG);
@@ -21,15 +33,44 @@
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
 	background-size: cover;
-	width: 100%; height: 100vh;
+	height: 100vh;
 	min-width: 100%; min-height: 600px;
 	overflow: hidden;
 }
 .welcome_text {
-	text-align: center;
 	width: 100%;
+	height: 50%;
+}
+.welcome_text p {
+	font: calc(15px + 0.25vw) 'Lato', sans-serif;
+	font-style: italic;
+	color: #fff;
+	letter-spacing: 0.35px;
+	text-align: center;
+}
+.welcome_btn {
+	width: 100%;
+	height: 10%;
+}
+.home-btn {
+	font: 20px 'Lato', sans-serif;
+	height: 100%;
+	border: none;
+}
+.home-btn a {
+	float: none;
+	text-align: center;
+	color: #fa8072;
+	height: auto;
+}
+.home-btn
+.btn-gen {
+	border-color: white;
+	border-width: 2px;
+	border-radius: 0;
 }
 
+/************************* NAV BAR *************************/
 .nav_custom {
 	text-transform: uppercase;
 	background: white; 
@@ -55,6 +96,7 @@
 	font-weight: bolder;
 }
 
+/************************* ABOUT ME *************************/
 .about_box {
 	margin: 0;
 	padding: 3% 6% 3% 6%;
@@ -67,6 +109,8 @@
 .bio { float: left; }
 .bio_img { padding: 2.5%; }
 
+
+/************************* PROJECTS *************************/
 .project_box {
 	margin: 0;
 	padding: 3% 6% 3% 6%;
@@ -92,6 +136,7 @@
 	white-space: normal;
 	word-wrap: break-word;
 	text-align: left;
+	padding: 1.5%;
 }
 .btn:active, .btn:hover, .btn:focus { outline: none; }
 .btn p {
@@ -101,6 +146,8 @@
 	text-align: left;
 }
 .btn p:hover, .btn p:focus { text-decoration: underline; }
+
+/************************* PROJECT MODALS *************************/
 .modal { background: rgba(26, 28, 30, 0.85); max-width: 100%;}
 .modal-content {
     background: transparent;
@@ -119,7 +166,9 @@
 	margin: 8% auto;
 	background: transparent;
 }
-.modal-title, .modal-body p, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body ul { color: mintcream;}
+.modal-title, .modal-body p, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body ul { 
+	color: mintcream;
+}
 .modal h3 {padding-bottom: 0.85em;}
 .modal-body img { box-sizing: border-box; }
 .modal-footer { padding-right: 0; }
@@ -135,29 +184,23 @@
 	font-weight: lighter;
 	text-shadow: none;
 }
-.close:hover, .close:focus { color: salmon;	outline: 0; }
+.close:hover, .close:focus { 
+	color: salmon;	
+	outline: 0; }
 
+
+/************************* COURSES *************************/
 .course_box {
 	margin: 0;
 	padding: 3% 6% 3% 6%;
 	justify-content: center;
 	clear: both;
 }
-.course_box span{font-style: normal; color: black; font-weight: bold;}
-
-.contact_box {
-	background: url("./images/sunsetbokeh.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%; height: 100vh;
-	min-width: 100%; min-height: 600px;
-	overflow: hidden;
+.course_box span {
+	font-style: normal; 
+	color: black; 
+	font-weight: bold;
 }
-.social_icon { display: inline-block; margin: 0.35em; height: 1.5em; }
-.social_icon:hover, .social_icon:focus { opacity: 0.8; }
-
-link { color: rgba(34,110,147,1.0000000000); }
 .course_box p, ul {
 	color: #393E46;
 	font: 16px 'Lato', sans-serif;
@@ -166,6 +209,35 @@ link { color: rgba(34,110,147,1.0000000000); }
 	margin-left: 1.3em;
 	text-indent: -1.3em; 
 }
+
+/************************* CONTACT *************************/
+.contact_box {
+	background: url("./images/sunsetbokeh.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%; 
+	height: 100vh;
+	min-width: 100%; min-height: 600px;
+	overflow: hidden;
+}
+.contact_box h1{
+	color: #1a1c1e;
+	padding-top: 42vh;
+}
+.social_icon { 
+	display: inline-block; 
+	margin: 0.35em; 
+	height: 1.5em; }
+.social_icon:hover, .social_icon:focus { 
+	opacity: 0.8; 
+}
+
+link { 
+	color: #226e93; 
+}
+
+
 .sp li { margin-left: 15px;	text-indent: -22px; padding-bottom: 0.5em;}
 .sp li:before { padding-right: 3px; }
 p {
@@ -177,9 +249,10 @@ p {
   	margin: 0;
   	text-align: justify;
 }
-h1 {
-	font: calc(30px + 2.3vw) 'Lato', sans-serif;
-	font-weight: 300;
+h1{
+	font-family: 'Lato', sans-serif;
+	font-size: calc(36px + 2.3vw);
+	font-weight: 400;
 	line-height: 1em;
 	text-align: center;
 	color: white;
