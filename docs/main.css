@@ -56,14 +56,25 @@
 	font: 20px 'Lato', sans-serif;
 	height: 100%;
 	border: none;
+	margin-top: 15px;
 }
 .home-btn a {
 	float: none;
-	text-align: center;
 	color: #fa8072;
-	height: auto;
+	height: 100%;
+	width: 90%;
+	padding: 6px;
+	background: #303A52;
+	font-style: italic;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
 }
-.home-btn
+.home-btn-bkg {
+	margin: auto;
+	text-align: center;
+	height: 40px
+}
 .btn-gen {
 	border-color: white;
 	border-width: 2px;

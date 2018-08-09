@@ -51,7 +51,12 @@
 				</div>
 				<div class="welcome_btn">
 					<div class="home-btn">
-						<a class="btn btn-lg btn-default" href="#projects" role="button" title="view project">View Projects</a>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2 home-btn-bkg"><a class="btn btn-lg btn-default" href="#about" role="button" title="about me">Who Am I?</a></div>
+						<div class="col-sm-2 home-btn-bkg"><a class="btn btn-lg btn-default" href="#projects" role="button" title="view project">Stuff I Do</a></div>
+						<div class="col-sm-2 home-btn-bkg"><a class="btn btn-lg btn-default" href="#courses" role="button" title="course list">What I've Learned</a></div>
+						<div class="col-sm-2 home-btn-bkg"><a class="btn btn-lg btn-default" href="#contact" role="button" title="contact">Find Me On...</a></div>
+						<div class="col-sm-2"></div>
 					</div>
 				</div>
 			</div>
@@ -85,288 +90,289 @@
 					<div class="bio bio_img col-sm-5"><img src="./images/self.jpg" style="width: 100%" /></div>
 				</div>
 			</div>
-		</section>
 
-		<!-- Engineering Projects -->
-		<div class="project_box smooth_scroll container-fluid sp" id="projects">
-			<h2>Projects</h2>
 
-			<div class="row" style="padding: 1%"">
-				<div class="col-sm-6" ><button type="button" class="btn btn-info btn-block" style="background-color: cadetblue" data-toggle="modal" data-target="#2017_PDAssist"><p>Assistive Device for Paraplegic Drivers</p></button></div>
-				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: cornsilk" data-toggle="modal" data-target="#2017_CATIAMod"><p>CATIA Surface Modeling</p></button></div>
-				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: #E8F1F5" data-toggle="modal" data-target="#2016_AutoSuit"><p>Autonomous Suitcase</p></button></div>
-				<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: #A9EEE6" data-toggle="modal" data-target="#2016_NatuTele"><p>Natural Telepresence</p></button></div>
-      		</div>     			
- 			<div id="2017_PDAssist" class="modal fade" role="dialog">
-    			<div class="modal_size modal-dialog">
-    				<div class="modal-content">
-    					<div class="modal-header">
-    						<button type="button" class="close" data-dismiss="modal">&times;</button>
-    						<h3 class="modal-title">Paraplegic Drive Assist (Spring 2017)</h3>
-    					</div>
-						<div class="modal-body">
-							<section>
-								<h4>Overview</h4>
-								<img src="./images/2017_PDAssist/apparatus.png" class="col-sm-4" style="float: right;" />
-								<p class="sub"><span>Task //</span> In a sophomore mechanical engineering design course (<a href="#courses" style="color: salmon;" data-dismiss="modal">ME 263</a>), our class was tasked to design any assistive device. Other tasks include conducting market research, search for relevant patents, 3D modeling, Design for Assembly analysis, and prototyping. </p> 
-								<p class="sub"><span>Our Audience //</span> My team decided to address the need for hand-operated vehicles used by those whom experience difficulties with leg movements and paraplegics, or individuals paralyzed from the waist down. Due to limited leg movement, these people cannot operate a standard commercial vehicle and must use a device that can control both foot pedals while steering the wheel. </p>
-								<p class="sub"><span>Project Goals //</span> Aiming to design a fully mechanical system that avoids issues with existing products while keeping human-centered design considerations in mind, we wanted to ensure the final product is ergonomic / comfortable, safe to use, not obstructive to any driver, and inexpensive. At the end of the semester, our team (Team DREAM) will have eventually created “DREAM Driving” so people who cannot operate the foot pedals in a car may drive whenever and wherever they want.</p>
-							</section>
-							<section>
-								<h4>How It Works</h4>
-								<p>This driver assistive device has intuitive hand controls, such that the user need only push the entire handle to control the brake pedal and pull on the lever to accelerate. While the user steers with one hand, the other is placed on the hand controls, which consists of a typical bicycle grip and bike brake lever secured to one end of an L-shaped tube. This tube is attached to a single-plane pivot that is mounted on the vehicle’s dashboard. Starting from within the L-shaped tube, two bowden cables run along the kick panel and run behind the car pedals with 3D-printed attachments. When force is applied to the hand controls, the cables pull on their respective pedals back towards the front of the vehicle.</p>
-							</section>
-							<section>
-								<h4>Background Research</h4>
-								<p class="sub"><span>The Market //</span> While looking through current products on the U.S. market, we found the existing benchmarks to be ineffective, fragile, difficult to install, and intrusive to non-handicapped drivers (device would cover the steering wheel and/or foot pedals). Products like electronic hand control systems function very well, but are not affordable solutions (e.g Kempf, Guidosimplex). We combined these with findings from interviews with members of our target audience to create House of Quality, detailing consumer and engineering requirements.</p>
-								
-							</section>
-							<img src="./images/2017_PDAssist/DR3AM_Poster.png" style="width: 100%;" />
+			<!-- Engineering Projects -->
+			<div class="project_box smooth_scroll container-fluid sp" id="projects">
+				<h2>Projects</h2>
+
+				<div class="row" style="padding: 1%">
+					<div class="col-sm-6" ><button type="button" class="btn btn-info btn-block" style="background-color: cadetblue" data-toggle="modal" data-target="#2017_PDAssist"><p>Assistive Device for Paraplegic Drivers</p></button></div>
+					<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: cornsilk" data-toggle="modal" data-target="#2017_CATIAMod"><p>CATIA Surface Modeling</p></button></div>
+					<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: #E8F1F5" data-toggle="modal" data-target="#2016_AutoSuit"><p>Autonomous Suitcase</p></button></div>
+					<div class="col-sm-6"><button type="button" class="btn btn-info btn-block" style="background-color: #A9EEE6" data-toggle="modal" data-target="#2016_NatuTele"><p>Natural Telepresence</p></button></div>
+	      		</div>     			
+	 			<div id="2017_PDAssist" class="modal fade" role="dialog">
+	    			<div class="modal_size modal-dialog">
+	    				<div class="modal-content">
+	    					<div class="modal-header">
+	    						<button type="button" class="close" data-dismiss="modal">&times;</button>
+	    						<h3 class="modal-title">Paraplegic Drive Assist (Spring 2017)</h3>
+	    					</div>
+							<div class="modal-body">
+								<section>
+									<h4>Overview</h4>
+									<img src="./images/2017_PDAssist/apparatus.png" class="col-sm-4" style="float: right;" />
+									<p class="sub"><span>Task //</span> In a sophomore mechanical engineering design course (<a href="#courses" style="color: salmon;" data-dismiss="modal">ME 263</a>), our class was tasked to design any assistive device. Other tasks include conducting market research, search for relevant patents, 3D modeling, Design for Assembly analysis, and prototyping. </p> 
+									<p class="sub"><span>Our Audience //</span> My team decided to address the need for hand-operated vehicles used by those whom experience difficulties with leg movements and paraplegics, or individuals paralyzed from the waist down. Due to limited leg movement, these people cannot operate a standard commercial vehicle and must use a device that can control both foot pedals while steering the wheel. </p>
+									<p class="sub"><span>Project Goals //</span> Aiming to design a fully mechanical system that avoids issues with existing products while keeping human-centered design considerations in mind, we wanted to ensure the final product is ergonomic / comfortable, safe to use, not obstructive to any driver, and inexpensive. At the end of the semester, our team (Team DREAM) will have eventually created “DREAM Driving” so people who cannot operate the foot pedals in a car may drive whenever and wherever they want.</p>
+								</section>
+								<section>
+									<h4>How It Works</h4>
+									<p>This driver assistive device has intuitive hand controls, such that the user need only push the entire handle to control the brake pedal and pull on the lever to accelerate. While the user steers with one hand, the other is placed on the hand controls, which consists of a typical bicycle grip and bike brake lever secured to one end of an L-shaped tube. This tube is attached to a single-plane pivot that is mounted on the vehicle’s dashboard. Starting from within the L-shaped tube, two bowden cables run along the kick panel and run behind the car pedals with 3D-printed attachments. When force is applied to the hand controls, the cables pull on their respective pedals back towards the front of the vehicle.</p>
+								</section>
+								<section>
+									<h4>Background Research</h4>
+									<p class="sub"><span>The Market //</span> While looking through current products on the U.S. market, we found the existing benchmarks to be ineffective, fragile, difficult to install, and intrusive to non-handicapped drivers (device would cover the steering wheel and/or foot pedals). Products like electronic hand control systems function very well, but are not affordable solutions (e.g Kempf, Guidosimplex). We combined these with findings from interviews with members of our target audience to create House of Quality, detailing consumer and engineering requirements.</p>
+									
+								</section>
+								<img src="./images/2017_PDAssist/DR3AM_Poster.png" style="width: 100%;" />
+							</div>
 						</div>
+						<div class="modal-footer"><p>CATIA V5, Surface Modeling, Design, Prototyping</p></div>
 					</div>
-					<div class="modal-footer"><p>CATIA V5, Surface Modeling, Design, Prototyping</p></div>
 				</div>
-			</div>
-			<div id="2017_CATIAMod" class="modal fade" role="dialog">
-    			<div class="modal_size modal-dialog">
-    				<div class="modal-content">
-    					<div class="modal-header">
-    						<button type="button" class="close" data-dismiss="modal">&times;</button>
-    						<h3 class="modal-title">CATIA V5 Surface Modeling</h3>
-    					</div>
-						<div class="modal-body">
-							<div class="row">
-							<section>
-								<div id="AudiR8" class="carousel slide col-sm-5" data-ride="carousel" data-interval="false">
-									<ol class="carousel-indicators">
-								      <li data-target="#AudiR8" data-slide-to="0" class="active"></li>
-								      <li data-target="#AudiR8" data-slide-to="1"></li>
-								    </ol>
-								    <div class="carousel-inner">
-							            <div class="item active">
-							            	<img src="images/2017_CATIAMod/car.png" style="width:100%;">
-							            	<div class="carousel-caption"><h4>Surfaces of Audi R8 Vehicle</h4></div>
-							            </div>
-							            <div class="item">
-							            	<img src="images/2017_CATIAMod/car2.jpeg" style="width:100%;">
-							            	<div class="carousel-caption"><h4>Complete Body of Car</h4></div>
-							            </div>
-							    	</div>
-							    	<a class="left carousel-control" href="#AudiR8" data-slide="prev">
-								        <span class="glyphicon glyphicon-chevron-left"></span>
-								    	<span class="sr-only">Previous</span>
-								    </a>
-								    <a class="right carousel-control" href="#AudiR8" data-slide="next">
-								    	<span class="glyphicon glyphicon-chevron-right"></span>
-								    	<span class="sr-only">Next</span>
-								    </a>
-								</div>
-							<div class="col-sm-7">
-								<h4>Audi R8</h4>
-								<p>As a first surface modeling project, I decided to challenge myself with CADing 
-								the body of a car.  I focused on learning to make surfaces with freestyle curves 
-								based on existing drawings.<br/>After finding the blueprints of the Audi R8, I 
-								used the Sketch Tracer workbench to import, position, and scale the four views 
-								(front, back, top, side) to a common axis.  Afterwards I used the 3D curve tool inside the 
-								Freestyle workbench to draw individual paths for half of the car, then adjusted 
-								the cartesian coordinates and imposed tangency for each point. Finally, I moved on to 
-								filling the paths in Generative Shape Design, and finally mirroring the surfaces 
-								to create the entire vehicle.</p>
-							</div>
-						</section>
-						<section>
-							</div>
-							<div class="row">
-								<div id="Camera" class="carousel slide col-sm-5" data-ride="carousel" data-interval="false">
-									<ol class="carousel-indicators">
-								      <li data-target="#Camera" data-slide-to="0" class="active"></li>
-								      <li data-target="#Camera" data-slide-to="1"></li>
-								      <li data-target="#Camera" data-slide-to="2"></li>
-								      <li data-target="#Camera" data-slide-to="3"></li>
-								      <li data-target="#Camera" data-slide-to="4"></li>
-								      <li data-target="#Camera" data-slide-to="5"></li>
-								    </ol>
-								    <div class="carousel-inner">
-							            <div class="item active">
-							            	<img src="images/2017_CATIAMod/camera.png" style="width:100%;">
-							            	<div class="carousel-caption"><h4>Entire Camera</h4></div>
-							            </div>
-							            <div class="item">
-							            	<img src="images/2017_CATIAMod/body.png" style="width:100%;">
-							            	<div class="carousel-caption"><h4>Camera Body</h4></div>
-							            </div>
-							            <div class="item">
-							            	<img src="images/2017_CATIAMod/hood.png" style="width:100%;">
-							            	<div class="carousel-caption"><h4>Hood</h4></div>
-							            </div>
-							            <div class="item">
-							            	<img src="images/2017_CATIAMod/lens.png" style="width:100%;">
-							            	<div class="carousel-caption"><h4>Lens</h4></div>
-							            </div>
-							            <div class="item">
-							            	<img src="images/2017_CATIAMod/lenscap.png" style="width:100%;">
-							            	<div class="carousel-caption"><h4>Lens Cap</h4></div>
-							            </div>
-							            <div class="item">
-							            	<img src="images/2017_CATIAMod/modebutton.png" style="width:100%;">
-							            	<div class="carousel-caption"><h4>Mode Selection Knob</h4></div>
-							            </div>
-							    	</div>
-							    	<a class="left carousel-control" href="#Camera" data-slide="prev">
-								        <span class="glyphicon glyphicon-chevron-left"></span>
-								    	<span class="sr-only">Previous</span>
-								    </a>
-								    <a class="right carousel-control" href="#Camera" data-slide="next">
-								    	<span class="glyphicon glyphicon-chevron-right"></span>
-								    	<span class="sr-only">Next</span>
-								    </a>
-								</div>
+				<div id="2017_CATIAMod" class="modal fade" role="dialog">
+	    			<div class="modal_size modal-dialog">
+	    				<div class="modal-content">
+	    					<div class="modal-header">
+	    						<button type="button" class="close" data-dismiss="modal">&times;</button>
+	    						<h3 class="modal-title">CATIA V5 Surface Modeling</h3>
+	    					</div>
+							<div class="modal-body">
+								<div class="row">
+								<section>
+									<div id="AudiR8" class="carousel slide col-sm-5" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+									      <li data-target="#AudiR8" data-slide-to="0" class="active"></li>
+									      <li data-target="#AudiR8" data-slide-to="1"></li>
+									    </ol>
+									    <div class="carousel-inner">
+								            <div class="item active">
+								            	<img src="images/2017_CATIAMod/car.png" style="width:100%;">
+								            	<div class="carousel-caption"><h4>Surfaces of Audi R8 Vehicle</h4></div>
+								            </div>
+								            <div class="item">
+								            	<img src="images/2017_CATIAMod/car2.jpeg" style="width:100%;">
+								            	<div class="carousel-caption"><h4>Complete Body of Car</h4></div>
+								            </div>
+								    	</div>
+								    	<a class="left carousel-control" href="#AudiR8" data-slide="prev">
+									        <span class="glyphicon glyphicon-chevron-left"></span>
+									    	<span class="sr-only">Previous</span>
+									    </a>
+									    <a class="right carousel-control" href="#AudiR8" data-slide="next">
+									    	<span class="glyphicon glyphicon-chevron-right"></span>
+									    	<span class="sr-only">Next</span>
+									    </a>
+									</div>
 								<div class="col-sm-7">
-									<h4>Canon T2i Digital Camera</h4>
-									<p>Unlike the Audi R8, I used this exercise to further develop surface modeling 
-									skills while practicing 3D modeling real-life objects without blueprints or drawings.
-									<br/>Measuring my own camera with calipers, I translated dimensions of five different 
-									parts of the camera into a surface model. Inside generative shape design, I first 
-									modeled the lens by creating cylinders and using the circular pattern to rotate 
-									small square ridges that represent the rubber grip used to adjust focal length of 
-									the lens. Next, I used curves in both the frontal and profile planes to create both 
-									the sun shield and lens cover. With both generative shape design and freestyle workbenches, 
-									I drew paths and moved individual points to create a rough model of the camera body. T
-									he last component is the knob used to switch between different camera modes (e.g. 
-									portait, automatic). Similar to the grip on the lens, I rotated small ridges on a conical 
-									frustrum to complete the CAD exercise.</p>
+									<h4>Audi R8</h4>
+									<p>As a first surface modeling project, I decided to challenge myself with CADing 
+									the body of a car.  I focused on learning to make surfaces with freestyle curves 
+									based on existing drawings.<br/>After finding the blueprints of the Audi R8, I 
+									used the Sketch Tracer workbench to import, position, and scale the four views 
+									(front, back, top, side) to a common axis.  Afterwards I used the 3D curve tool inside the 
+									Freestyle workbench to draw individual paths for half of the car, then adjusted 
+									the cartesian coordinates and imposed tangency for each point. Finally, I moved on to 
+									filling the paths in Generative Shape Design, and finally mirroring the surfaces 
+									to create the entire vehicle.</p>
 								</div>
+							</section>
+							<section>
+								</div>
+								<div class="row">
+									<div id="Camera" class="carousel slide col-sm-5" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+									      <li data-target="#Camera" data-slide-to="0" class="active"></li>
+									      <li data-target="#Camera" data-slide-to="1"></li>
+									      <li data-target="#Camera" data-slide-to="2"></li>
+									      <li data-target="#Camera" data-slide-to="3"></li>
+									      <li data-target="#Camera" data-slide-to="4"></li>
+									      <li data-target="#Camera" data-slide-to="5"></li>
+									    </ol>
+									    <div class="carousel-inner">
+								            <div class="item active">
+								            	<img src="images/2017_CATIAMod/camera.png" style="width:100%;">
+								            	<div class="carousel-caption"><h4>Entire Camera</h4></div>
+								            </div>
+								            <div class="item">
+								            	<img src="images/2017_CATIAMod/body.png" style="width:100%;">
+								            	<div class="carousel-caption"><h4>Camera Body</h4></div>
+								            </div>
+								            <div class="item">
+								            	<img src="images/2017_CATIAMod/hood.png" style="width:100%;">
+								            	<div class="carousel-caption"><h4>Hood</h4></div>
+								            </div>
+								            <div class="item">
+								            	<img src="images/2017_CATIAMod/lens.png" style="width:100%;">
+								            	<div class="carousel-caption"><h4>Lens</h4></div>
+								            </div>
+								            <div class="item">
+								            	<img src="images/2017_CATIAMod/lenscap.png" style="width:100%;">
+								            	<div class="carousel-caption"><h4>Lens Cap</h4></div>
+								            </div>
+								            <div class="item">
+								            	<img src="images/2017_CATIAMod/modebutton.png" style="width:100%;">
+								            	<div class="carousel-caption"><h4>Mode Selection Knob</h4></div>
+								            </div>
+								    	</div>
+								    	<a class="left carousel-control" href="#Camera" data-slide="prev">
+									        <span class="glyphicon glyphicon-chevron-left"></span>
+									    	<span class="sr-only">Previous</span>
+									    </a>
+									    <a class="right carousel-control" href="#Camera" data-slide="next">
+									    	<span class="glyphicon glyphicon-chevron-right"></span>
+									    	<span class="sr-only">Next</span>
+									    </a>
+									</div>
+									<div class="col-sm-7">
+										<h4>Canon T2i Digital Camera</h4>
+										<p>Unlike the Audi R8, I used this exercise to further develop surface modeling 
+										skills while practicing 3D modeling real-life objects without blueprints or drawings.
+										<br/>Measuring my own camera with calipers, I translated dimensions of five different 
+										parts of the camera into a surface model. Inside generative shape design, I first 
+										modeled the lens by creating cylinders and using the circular pattern to rotate 
+										small square ridges that represent the rubber grip used to adjust focal length of 
+										the lens. Next, I used curves in both the frontal and profile planes to create both 
+										the sun shield and lens cover. With both generative shape design and freestyle workbenches, 
+										I drew paths and moved individual points to create a rough model of the camera body. T
+										he last component is the knob used to switch between different camera modes (e.g. 
+										portait, automatic). Similar to the grip on the lens, I rotated small ridges on a conical 
+										frustrum to complete the CAD exercise.</p>
+									</div>
+								</div>
+							</section>
 							</div>
-						</section>
+						</div>
+						<div class="modal-footer"><p>CATIA V5, CAD, Surface Modeling</p></div>						
+					</div>
+				</div>
+	 			<div id="2016_AutoSuit" class="modal fade" role="dialog">
+	    			<div class="modal_size modal-dialog">
+	    				<div class="modal-content">
+	    					<div class="modal-header">
+	    						<button type="button" class="close" data-dismiss="modal">&times;</button>
+	    						<h3 class="modal-title">Autonomous Suitcase</h3>
+	    					</div>
+							<div class="modal-body">
+								<div id="autosuit" class="carousel slide col-sm-4" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+								      <li data-target="#autosuit" data-slide-to="0" class="active"></li>
+								      <li data-target="#autosuit" data-slide-to="1"></li>
+								    </ol>
+								    <div class="carousel-inner">
+							            <div class="item active">
+							            	<img src="./images/suitcaseframe.jpg" style="width:100%;">
+							            	<div class="carousel-caption"><h4>Frame</h4></div>
+							            </div>
+							            <div class="item">
+							            	<img src="./images/autonsuitcase.jpg" style="width:100%;">
+							            	<div class="carousel-caption"><h4>Frame with Suitcase</h4></div>
+							            </div>
+							    	</div>
+							    	<a class="left carousel-control" href="#autosuit" data-slide="prev">
+								        <span class="glyphicon glyphicon-chevron-left"></span>
+								    	<span class="sr-only">Previous</span>
+								    </a>
+								    <a class="right carousel-control" href="#autosuit" data-slide="next">
+								    	<span class="glyphicon glyphicon-chevron-right"></span>
+								    	<span class="sr-only">Next</span>
+								    </a>
+								</div>
+								<div class="col-sm-8">
+									<p>My friends and I decided we wanted our carry-on luggages to follow us around the 
+									airport so we could have a hands-free journey sometime in the near future. We thought 
+									of problems like how to support the luggage, move the entire apparatus, and have the 
+									frame follow its user.</p>
+									<p>With an Xbox Kinect and prior experience with brushless skateboard motors, we split tasks amongst each 
+									other. As two people CAD-ed and laser cut the luggage frame using MDF boards, I worked 
+									with another friend to write the necessary program in Python which would allow the 
+									system to move. We utilized ROS python packages to control the skateboard wheels and 
+									speed controllers. Then, integrated Kinect's existing motion tracking code such 
+									that the wheels would move forward and turn in the same direction as the person being 
+									tracked by the Kinect. Thus, code + MDF luggage frame = Autonomous Suitcase! </p>
+								</div>
+							</div>	
+							<div class="modal-footer"><p>Python, ROS, Autonomous Systmes, Kinect</p></div>
 						</div>
 					</div>
-					<div class="modal-footer"><p>CATIA V5, CAD, Surface Modeling</p></div>						
 				</div>
-			</div>
- 			<div id="2016_AutoSuit" class="modal fade" role="dialog">
-    			<div class="modal_size modal-dialog">
-    				<div class="modal-content">
-    					<div class="modal-header">
-    						<button type="button" class="close" data-dismiss="modal">&times;</button>
-    						<h3 class="modal-title">Autonomous Suitcase</h3>
-    					</div>
-						<div class="modal-body">
-							<div id="autosuit" class="carousel slide col-sm-4" data-ride="carousel" data-interval="false">
-								<ol class="carousel-indicators">
-							      <li data-target="#autosuit" data-slide-to="0" class="active"></li>
-							      <li data-target="#autosuit" data-slide-to="1"></li>
-							    </ol>
-							    <div class="carousel-inner">
-						            <div class="item active">
-						            	<img src="./images/suitcaseframe.jpg" style="width:100%;">
-						            	<div class="carousel-caption"><h4>Frame</h4></div>
-						            </div>
-						            <div class="item">
-						            	<img src="./images/autonsuitcase.jpg" style="width:100%;">
-						            	<div class="carousel-caption"><h4>Frame with Suitcase</h4></div>
-						            </div>
-						    	</div>
-						    	<a class="left carousel-control" href="#autosuit" data-slide="prev">
-							        <span class="glyphicon glyphicon-chevron-left"></span>
-							    	<span class="sr-only">Previous</span>
-							    </a>
-							    <a class="right carousel-control" href="#autosuit" data-slide="next">
-							    	<span class="glyphicon glyphicon-chevron-right"></span>
-							    	<span class="sr-only">Next</span>
-							    </a>
-							</div>
-							<div class="col-sm-8">
-								<p>My friends and I decided we wanted our carry-on luggages to follow us around the 
-								airport so we could have a hands-free journey sometime in the near future. We thought 
-								of problems like how to support the luggage, move the entire apparatus, and have the 
-								frame follow its user.</p>
-								<p>With an Xbox Kinect and prior experience with brushless skateboard motors, we split tasks amongst each 
-								other. As two people CAD-ed and laser cut the luggage frame using MDF boards, I worked 
-								with another friend to write the necessary program in Python which would allow the 
-								system to move. We utilized ROS python packages to control the skateboard wheels and 
-								speed controllers. Then, integrated Kinect's existing motion tracking code such 
-								that the wheels would move forward and turn in the same direction as the person being 
-								tracked by the Kinect. Thus, code + MDF luggage frame = Autonomous Suitcase! </p>
-							</div>
-						</div>	
-						<div class="modal-footer"><p>Python, ROS, Autonomous Systmes, Kinect</p></div>
+				<div id="2016_NatuTele" class="modal fade" role="dialog">
+	    			<div class="modal_size modal-dialog">
+	    				<div class="modal-content">
+	    					<div class="modal-header">
+	    						<button type="button" class="close" data-dismiss="modal">&times;</button>
+	    						<h3 class="modal-title">Natural Telepresence</h3>
+	    					</div>
+							<div class="modal-body">
+								<p>Inspired by our passion for robots, interests in virtual reality, and motivation 
+								to do well at our first hackathon, together my friends and I created... Natural 
+								Telepresence. This small cardboard robot can be driven around with controls on a web 
+								app and features a camera mounted on a gimbal. When looking through a Google Cardboard, 
+								the user can view a live-stream video from the robot's perspective.</p>
+								<p>Personally, this was a first and favorite hackathon experience not only because I helped build 
+								a robot with pieces of cardboard, but my friends introduced me to the world of programming. 
+								As a complete novice in coding, learning to use <a href="http://wiki.ros.org/">ROS</a> 
+								python packages proved to be the more difficult challenge. But eventually, I learned to use 
+								it to pass the smartphone's gyroscope data to the controller for the gimbal, which 
+								allowed the robot's camera to turn the same way as the user's head. Our greatest 
+								challenge was avoiding gimbal lock and we had overcome this by converting the phone's Euler 
+								angles to quaternions.<br/></p> 
+								<p style="font-style: italic">Read more <a href="https://devpost.com/software/natural_telepresence">here</a>.</p>
+							</div>	
+						</div>
+						<div class="modal-footer"><p>Python, ROS, VR/AR, Robots</p></div>
 					</div>
 				</div>
-			</div>
-			<div id="2016_NatuTele" class="modal fade" role="dialog">
-    			<div class="modal_size modal-dialog">
-    				<div class="modal-content">
-    					<div class="modal-header">
-    						<button type="button" class="close" data-dismiss="modal">&times;</button>
-    						<h3 class="modal-title">Natural Telepresence</h3>
-    					</div>
-						<div class="modal-body">
-							<p>Inspired by our passion for robots, interests in virtual reality, and motivation 
-							to do well at our first hackathon, together my friends and I created... Natural 
-							Telepresence. This small cardboard robot can be driven around with controls on a web 
-							app and features a camera mounted on a gimbal. When looking through a Google Cardboard, 
-							the user can view a live-stream video from the robot's perspective.</p>
-							<p>Personally, this was a first and favorite hackathon experience not only because I helped build 
-							a robot with pieces of cardboard, but my friends introduced me to the world of programming. 
-							As a complete novice in coding, learning to use <a href="http://wiki.ros.org/">ROS</a> 
-							python packages proved to be the more difficult challenge. But eventually, I learned to use 
-							it to pass the smartphone's gyroscope data to the controller for the gimbal, which 
-							allowed the robot's camera to turn the same way as the user's head. Our greatest 
-							challenge was avoiding gimbal lock and we had overcome this by converting the phone's Euler 
-							angles to quaternions.<br/></p> 
-							<p style="font-style: italic">Read more <a href="https://devpost.com/software/natural_telepresence">here</a>.</p>
-						</div>	
-					</div>
-					<div class="modal-footer"><p>Python, ROS, VR/AR, Robots</p></div>
-				</div>
-			</div>
-		</div> 
+			</div> 
 
-		<!-- Courses -->
-		<div class="course_box sp smooth_scroll" id="courses">  <!-- Shift+Option+backslash = » -->
-			<h2>Courses</h2>
-			<div>
-				<h3>Spring 2018</h3>
-				<p><span>Engineering Term Abroad: Shanghai, China</span> &#8212 <a href="http://en.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a>
-				<ul>
-					<li><span>Intercultural Teamwork</span> &#8212 use Hofstede's cultural dimensions (e.g. power distance, long-term orientation, individualism/collectivism) to analyze personal observations on Chinese culture</li>
-					<li><span>Chinese Culture</span> &#8212 insight on Chinese people, customs, and way of life</li>
-					<li><span>Heat &amp Mass Transfer</span> &#8212 model heat and mass transfer processes (conduction, forced/natural/combined convection, radiation); identify transport processes in various applications; conduct experiments to solve open-ended heat/mass problems</li>
-					<li><span>Thermodynamics II</span> &#8212  analysis of transient energy, exergy, compressible flow, and property relations; applications of thermodynamics to materials like gas mixtures</li>
-				</ul>
+			<!-- Courses -->
+			<div class="course_box sp smooth_scroll" id="courses">  <!-- Shift+Option+backslash = » -->
+				<h2>Courses</h2>
+				<div>
+					<h3>Spring 2018</h3>
+					<p><span>Engineering Term Abroad: Shanghai, China</span> &#8212 <a href="http://en.sjtu.edu.cn/" target="_blank">Shanghai Jiao Tong University</a>
+					<ul>
+						<li><span>Intercultural Teamwork</span> &#8212 use Hofstede's cultural dimensions (e.g. power distance, long-term orientation, individualism/collectivism) to analyze personal observations on Chinese culture</li>
+						<li><span>Chinese Culture</span> &#8212 insight on Chinese people, customs, and way of life</li>
+						<li><span>Heat &amp Mass Transfer</span> &#8212 model heat and mass transfer processes (conduction, forced/natural/combined convection, radiation); identify transport processes in various applications; conduct experiments to solve open-ended heat/mass problems</li>
+						<li><span>Thermodynamics II</span> &#8212  analysis of transient energy, exergy, compressible flow, and property relations; applications of thermodynamics to materials like gas mixtures</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Fall 2017</h3>
+					<ul>
+						<li><span>Fluid Mechanics</span> &#8212 types of fluids, flow behaviors, and applications of fluid mechanics</li>
+						<li><span>Mechanics of Materials</span> &#8212 stress, strain, deformation, buckling, and deflection of rigid bodies</li>
+						<li><span>Systems &amp Measurements</span> &#8212 use LabView and <a href="http://www.ni.com/product-documentation/14604/en/">NI myRIO-1900</a> to control and design electromechanical systems; DAQ (data acquisition systems) </li>
+						<li><span>Structures &amp Properties of Materials</span> &#8212  Materials Science and Engineering course about basics of materials and creating materials using given criteria</li>
+						<!-- <li><span>Dynamics &amp Vibrations</span> &#8212 Aerospace Engineering course for analyzing and simulating motions of aerial bodies </li>  -->
+					</ul>
+				</div>
+				<div>
+					<h3>Summer 2017</h3>
+					<p><span>Study Abroad: Testing Compact Power Systems</span> &#8212 <a href="http://www.upv.es/index-en.html" target="_blank">Polytechnic University of Valenica</a>, <a href="http://estudiaencartagena.upct.es/international/english/start/" target="_blank">Polytechnic University of Cartegena</a> (Spain)</p>
+					<ul>
+						<li><span>Two weeks in Valencia...</span> Daily lectures/labs regarding optical and intrusive techniques (e.g. lasers for Schlieren imaging, PIV, hot wire anemometry) for evaluating IC engines; Learned to processing digital data by creating calibration curves, synchronizing signals, remove noise from signals and more</li>
+						<li><span>Three Days in Cartagena...</span> Site visits to power plant, Spanish Air Force, diesel engine manufacturer</li>
+						<li><span>Two Days in Madrid...</span> <a href="https://www.flickr.com/photos/133693491@N04/collections/72157681561466543/" target="_blank">Fun!</a></li>
+					</ul>
+				</div>
+				<!-- <div>
+					<h3>Spring 2017</h3>
+					<ul>
+						<li><span>Intro to Mechanical Engineering Design</span> &#8212 team design project w/ market 
+						research, CAD, fabrication; assess product performance in the U.S. market </li>
+						<li><span>Linear Circuit Analysis</span> &#8212 fundamentals of electronics; build, design, and test simple circuits</li>
+					</ul>
+				</div> -->
+				<div>
+					<h3>Other Courses:</h3>
+					<p>Linear Circuit Analysis; Intro to Mechanical Engineering Design; Dynamics; Statics; Thermodynamics I; Partial Differential Equations</p>
+				</div>
 			</div>
-			<div>
-				<h3>Fall 2017</h3>
-				<ul>
-					<li><span>Fluid Mechanics</span> &#8212 types of fluids, flow behaviors, and applications of fluid mechanics</li>
-					<li><span>Mechanics of Materials</span> &#8212 stress, strain, deformation, buckling, and deflection of rigid bodies</li>
-					<li><span>Systems &amp Measurements</span> &#8212 use LabView and <a href="http://www.ni.com/product-documentation/14604/en/">NI myRIO-1900</a> to control and design electromechanical systems; DAQ (data acquisition systems) </li>
-					<li><span>Structures &amp Properties of Materials</span> &#8212  Materials Science and Engineering course about basics of materials and creating materials using given criteria</li>
-					<!-- <li><span>Dynamics &amp Vibrations</span> &#8212 Aerospace Engineering course for analyzing and simulating motions of aerial bodies </li>  -->
-				</ul>
-			</div>
-			<div>
-				<h3>Summer 2017</h3>
-				<p><span>Study Abroad: Testing Compact Power Systems</span> &#8212 <a href="http://www.upv.es/index-en.html" target="_blank">Polytechnic University of Valenica</a>, <a href="http://estudiaencartagena.upct.es/international/english/start/" target="_blank">Polytechnic University of Cartegena</a> (Spain)</p>
-				<ul>
-					<li><span>Two weeks in Valencia...</span> Daily lectures/labs regarding optical and intrusive techniques (e.g. lasers for Schlieren imaging, PIV, hot wire anemometry) for evaluating IC engines; Learned to processing digital data by creating calibration curves, synchronizing signals, remove noise from signals and more</li>
-					<li><span>Three Days in Cartagena...</span> Site visits to power plant, Spanish Air Force, diesel engine manufacturer</li>
-					<li><span>Two Days in Madrid...</span> <a href="https://www.flickr.com/photos/133693491@N04/collections/72157681561466543/" target="_blank">Fun!</a></li>
-				</ul>
-			</div>
-			<!-- <div>
-				<h3>Spring 2017</h3>
-				<ul>
-					<li><span>Intro to Mechanical Engineering Design</span> &#8212 team design project w/ market 
-					research, CAD, fabrication; assess product performance in the U.S. market </li>
-					<li><span>Linear Circuit Analysis</span> &#8212 fundamentals of electronics; build, design, and test simple circuits</li>
-				</ul>
-			</div> -->
-			<div>
-				<h3>Other Courses:</h3>
-				<p>Linear Circuit Analysis; Intro to Mechanical Engineering Design; Dynamics; Statics; Thermodynamics I; Partial Differential Equations</p>
-			</div>
-		</div>
+		</section>
 
 		<div class="contact_box" id="contact">
 			<div>
