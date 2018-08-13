@@ -62,16 +62,18 @@
 	float: none;
 	color: #fa8072;
 	height: 100%;
-	width: 90%;
-	padding: 6px;
-	background: #303A52;
-	font-style: italic;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 700;
+	width: 165px;
+    padding-top: 12px;
+    background: #303A52;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-variant: all-petite-caps;
+    line-height: 12px;
 }
 .home-btn-bkg {
-	margin: auto;
+	margin: 16px auto 16px auto;
 	text-align: center;
 	height: 40px
 }
@@ -84,8 +86,8 @@
 /************************* NAV BAR *************************/
 .nav_custom {
 	text-transform: uppercase;
-	background: white; 
-	opacity: 0.75;
+	background: #fff; 
+	opacity: 0.65;
 	height: 3.75em;
 	position: fixed;
 	overflow: hidden;
@@ -98,13 +100,14 @@
 }
 .nav_custom a {
 	font: 15px 'Lato', sans-serif;
-	color: #393E46;
+	color: #303A52;
 	text-decoration: underline;
 }
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
     background-color: transparent;
-    color: black;
+    color: #fa8072;
 	font-weight: bolder;
+	font-style: italic;
 }
 
 /************************* ABOUT ME *************************/
